@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="de"><!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ungleichungen</title>
+  
+</head>
+<body style="background-color: #B9D1EA;">
+
+    <style> 
+        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em; }
+        .Text2 { font-size: 1em; font-family: Verdana,Sans-serif;margin-top:1em;margin-left:0.5em;}
+        .Text3 { font-size: 0.8em;background-color: white; font-family: Verdana,Sans-serif;margin:0.5em; }
+        
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;}
+        button {background-color:white; font-family: Verdana, Sans-serif; }
+        input {background-color:yellow; }
+    </style>
+
+<p class="Text1">Wie löse ich Matheaufgaben?</p>
+<p class="Text1">Ungleichungen</p> 
+
+<p class="Text2"><span style= "background-color:white;">Sie sehen ein gelbes Eingabefeld und die <br>Schalter: Prüfen und Lösung.</span></p>
+<p class="Text2"><span style= "background-color:white;">Tragen Sie Ihr Ergebnis ein, prüfen Sie es <br> oder starten Sie eine Lösung.</span></p>
+
+       <!--//Aufgabe 35--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 35
+
+Bestimmen Sie die Lösungsmengen der 
+Ungleichungen für x ∈ ℝ:
+
+a) x<sup>2</sup> < 36
+b) x<sup>2</sup> > 0,25
+c) x<sup>2</sup> < -2 </strong> 
+
+<button  onclick="window.open('Ungleich_Aufgabe35.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 36-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 36
+
+Bestimmen Sie die Lösungsmenge der 
+Ungleichung für x ∈ ℝ:
+
+(x + 2)² < 9      </strong>
+
+<input type="text" id="Eintrag36" maxlength="2" size="1" style= background-color:yellow ></input> < x < -2 <button id="Pruef36" onclick="Aufgabe36()">Prüfen</button></p></pre>
+ 
+                      <script>
+                        function Aufgabe36() { 
+                                                
+                          if (Eintrag36.value=="-5") {alert("Richtig"); document.getElementById("Pruef36").disabled= true;
+                          }  
+                           
+                          else if (Eintrag36.value!=="-5" && Eintrag36.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag36").value="-5"; window.open('Ungleich_Aufgabe36.html');           
+                          document.getElementById("Pruef36").disabled= true;}
+                               
+                          else if (Eintrag36.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+       <!--//Aufgabe 37--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 37
+
+Bestimmen Sie die Lösungsmenge der 
+Ungleichung für x ∈ ℝ:
+
+(x - 1)² > 1  </strong> 
+
+<button  onclick="window.open('Ungleich_Aufgabe37.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 38-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 38
+
+Bestimmen Sie die Lösungsmenge der 
+Ungleichung für x ∈ ℝ:
+
+(x + 4)² ≥ 1           </strong>
+
+x ≥ <input type="text" id="Eintrag38" maxlength="2" size="1" style= background-color:yellow ></input> v x ≤ -5 <button id="Pruef38" onclick="Aufgabe38()">Prüfen</button></p></pre>
+ 
+                      <script>
+                        function Aufgabe38() { 
+                                                
+                          if (Eintrag38.value=="-3") {alert("Richtig"); document.getElementById("Pruef38").disabled= true;
+                          }  
+                           
+                          else if (Eintrag38.value!=="-3" && Eintrag38.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag38").value="-3"; window.open('Ungleich_Aufgabe38.html');           
+                          document.getElementById("Pruef38").disabled= true;}
+                               
+                          else if (Eintrag38.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>  
+                      
+       <!--//Aufgabe 39--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 39
+
+Bestimmen Sie die Lösungsmenge der 
+Ungleichung für x ∈ ℝ:
+
+a) 8(x + 2)² > -2
+
+b) -(x + 7)² > 16  </strong>
+
+<button  onclick="window.open('Ungleich_Aufgabe39.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 40-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 40
+
+Bestimmen Sie die Lösungsmenge der 
+Ungleichung für x ∈ ℝ:
+
+(x + 6)² ≤ 9          </strong>
+
+- 9 ≤ x ≤ <input type="text" id="Eintrag40" maxlength="2" size="1" style= background-color:yellow ></input> <button id="Pruef40" onclick="Aufgabe40()">Prüfen</button></p></pre>
+ 
+                      <script>
+                        function Aufgabe40() { 
+                                                
+                          if (Eintrag40.value=="-3") {alert("Richtig"); document.getElementById("Pruef40").disabled= true;
+                          }  
+                           
+                          else if (Eintrag40.value!=="-3" && Eintrag40.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag40").value="-3"; window.open('Ungleich_Aufgabe40.html');           
+                          document.getElementById("Pruef40").disabled= true;}
+                               
+                          else if (Eintrag40.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+       <!--//Aufgabe 41--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 41</nobr>
+
+Bestimmen Sie die Lösungsmenge der 
+Ungleichung für x ∈ ℝ:
+
+x<sup>2</sup> - 8x + 12 ≥ 0 </strong> 
+
+<button  onclick="window.open('Ungleich_Aufgabe41.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 42-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 42
+
+Bestimmen Sie die Lösungsmenge der 
+Ungleichung für x ∈ ℝ:
+
+2x<sup>2</sup> + 6x - 8 < 0            </strong>
+
+<input type="text" id="Eintrag42" maxlength="2" size="1" style= background-color:yellow > < x < 1 <button id="Pruef42" onclick="Aufgabe42()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe42() { 
+                                                
+                          if (Eintrag42.value=="-4") {alert("Richtig"); document.getElementById("Pruef42").disabled= true;
+                          }  
+                           
+                          else if (Eintrag42.value!=="-4" && Eintrag42.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag42").value="-4"; window.open('Ungleich_Aufgabe42.html');           
+                          document.getElementById("Pruef42").disabled= true;}
+                               
+                          else if (Eintrag42.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+       <!--//Aufgabe 43--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 43
+
+Bestimmen Sie die Lösungsmenge der 
+Ungleichung für x ∈ ℝ:
+
+3 - 4x - 4x<sup>2</sup> ≥ 0</strong> 
+
+<button  onclick="window.open('Ungleich_Aufgabe43.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 44-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 44
+
+Bestimmen Sie die Lösungsmenge der 
+Ungleichung für x ∈ ℝ:
+
+x<sup>2</sup> - 7x + 10 < 0             </strong>
+
+2 < x < <input type="text" id="Eintrag44" maxlength="1" size="1" style= background-color:yellow ></input> <button id="Pruef44" onclick="Aufgabe44()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe44() { 
+                                                
+                          if (Eintrag44.value=="5") {alert("Richtig"); document.getElementById("Pruef44").disabled= true;
+                          }  
+                           
+                          else if (Eintrag44.value!=="5" && Eintrag44.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag44").value="5"; window.open('Ungleich_Aufgabe44.html');           
+                          document.getElementById("Pruef44").disabled= true;}
+                               
+                          else if (Eintrag44.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+        <!--//Aufgabe 45--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 45
+
+Bestimmen Sie die Lösungsmenge der 
+Ungleichungen für x ∈ ℝ:
+
+a) x<sup>2</sup> - 6x + 10 > 0
+
+b) 4x<sup>2</sup> - 4x + 1 > 0  </strong> 
+
+<button  onclick="window.open('Ungleich_Aufgabe45.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 46-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 46
+
+Bestimmen Sie die Lösungsmenge der 
+Ungleichung für x ∈ ℝ:
+
+x<sup>2</sup> + 10x < -21                   </strong>
+
+-7 < x < <input type="text" id="Eintrag46" maxlength="2" size="1" style= background-color:yellow ></input> <button id="Pruef46" onclick="Aufgabe46()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe46() { 
+                                                
+                          if (Eintrag46.value=="-3") {alert("Richtig"); document.getElementById("Pruef46").disabled= true;
+                          }  
+                           
+                          else if (Eintrag46.value!=="-3" && Eintrag46.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag46").value="-3"; window.open('Ungleich_Aufgabe46.html');           
+                          document.getElementById("Pruef46").disabled= true;}
+                               
+                          else if (Eintrag46.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+       <!--//Aufgabe 47--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 47
+
+Bestimmen Sie die Lösungsmengen der 
+Ungleichungen für x ∈ ℝ:
+
+6x<sup>2</sup> + 11x < - 7   </strong> 
+
+<button  onclick="window.open('Ungleich_Aufgabe47.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 48-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 48
+
+Bestimmen Sie die Lösungsmenge der 
+Ungleichung für x ∈ ℝ:
+
+2x<sup>2</sup> + 18x + 21 > x<sup>2</sup> + 5x - 9   </strong>
+
+x > <input type="text" id="Eintrag48" maxlength="2" size="1" style= background-color:yellow ></input> v x < -10 <button id="Pruef48" onclick="Aufgabe48()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe48() { 
+                                                
+                          if (Eintrag48.value=="-3") {alert("Richtig"); document.getElementById("Pruef48").disabled= true;
+                          }  
+                           
+                          else if (Eintrag48.value!=="-3" && Eintrag48.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag48").value="-3"; window.open('Ungleich_Aufgabe48.html');           
+                          document.getElementById("Pruef48").disabled= true;}
+                               
+                          else if (Eintrag48.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+       <!--//Aufgabe 49--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 49
+
+Bestimmen Sie die Lösungsmenge der 
+Ungleichung für x ∈ ℝ:
+
+18x<sup>2</sup> - 119x - 356 ≥ 1672 - 6x<sup>2</sup> </strong> 
+
+<button  onclick="window.open('Ungleich_Aufgabe49.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 50-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 50
+
+Bestimmen Sie die Lösungsmenge der 
+Ungleichung für x ∈ ℝ:
+
+(6 - x)(x<sup>2</sup> + 0,3x) ≤ 0       </strong>
+
+-0,3 ≤ x ≤ 0 v x ≥ <input type="text" id="Eintrag50" maxlength="1" size="1" style= background-color:yellow ></input> <button id="Pruef50" onclick="Aufgabe50()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe50() { 
+                                                
+                          if (Eintrag50.value=="6") {alert("Richtig"); document.getElementById("Pruef50").disabled= true;
+                          }  
+                           
+                          else if (Eintrag50.value!=="6" && Eintrag50.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag50").value="6"; window.open('Ungleich_Aufgabe50.html');           
+                          document.getElementById("Pruef50").disabled= true;}
+                               
+                          else if (Eintrag50.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+       <!--//Aufgabe 51--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 51
+
+Bestimmen Sie die Lösungsmenge der 
+Ungleichung für x ∈ ℝ:
+
+4x<sup>3</sup> - 20x<sup>2</sup> < 0 </strong> 
+
+<button  onclick="window.open('Ungleich_Aufgabe51.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 52-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 52
+
+Bestimmen Sie die Lösungsmenge der 
+Ungleichung für x ∈ ℝ:
+
+-9x<sup>3</sup> - 9x < 0           </strong>
+
+x > <input type="text" id="Eintrag52" maxlength="1" size="1" style= background-color:yellow ></input> <button id="Pruef52" onclick="Aufgabe52()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe52() { 
+                                                
+                          if (Eintrag52.value=="0") {alert("Richtig"); document.getElementById("Pruef52").disabled= true;
+                          }  
+                           
+                          else if (Eintrag52.value!=="0" && Eintrag52.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag52").value="0"; window.open('Ungleich_Aufgabe52.html');           
+                          document.getElementById("Pruef52").disabled= true;}
+                               
+                          else if (Eintrag52.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+       <!--//Aufgabe 53--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 53
+
+Bestimmen Sie die Lösungsmenge der 
+Ungleichung für x ∈ ℝ:
+
+(x<sup>2</sup> + 4)(x<sup>2</sup> - 4) ≤ 0 </strong> 
+
+<button  onclick="window.open('Ungleich_Aufgabe53.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 54-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 54
+
+Bestimmen Sie die Lösungsmenge der 
+Ungleichung für x ∈ ℝ:
+
+-4,2x<sup>2</sup>(x + 11)(x - 3)<sup>2</sup> > 0         </strong>
+
+x < <input type="text" id="Eintrag54" maxlength="3" size="1" style= background-color:yellow ></input> <button id="Pruef54" onclick="Aufgabe54()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe54() { 
+                                                
+                          if (Eintrag54.value=="-11") {alert("Richtig"); document.getElementById("Pruef54").disabled= true;
+                          }  
+                           
+                          else if (Eintrag54.value!=="-11" && Eintrag54.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag54").value="-11"; window.open('Ungleich_Aufgabe54.html');           
+                          document.getElementById("Pruef54").disabled= true;}
+                               
+                          else if (Eintrag54.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+       <!--//Aufgabe 55--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 55
+
+Bestimmen Sie die Lösungsmenge der 
+Ungleichung für x ∈ ℝ:
+
+ 2 - 6x<sup>2</sup>
+---------- ≥ 0
+(x<sup>2</sup> + 1)<sup>3</sup> </strong> 
+
+<button  onclick="window.open('Ungleich_Aufgabe55.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 56-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 56
+
+Bestimmen Sie die Lösungsmenge der 
+Ungleichung für x ∈ ℝ:
+
+ 18x<sup>2</sup> + 12
+------------- < 0       
+  (x<sup>2</sup> - 2)<sup>3</sup> </strong>
+
+- √2 < x < √<input type="text" id="Eintrag56" maxlength="1" size="1" style= background-color:yellow ></input> <button id="Pruef56" onclick="Aufgabe56()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe56() { 
+                                                
+                          if (Eintrag56.value=="2") {alert("Richtig"); document.getElementById("Pruef56").disabled= true;
+                          }  
+                           
+                          else if (Eintrag56.value!=="2" && Eintrag56.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag56").value="2"; window.open('Ungleich_Aufgabe56.html');           
+                          document.getElementById("Pruef56").disabled= true;}
+                               
+                          else if (Eintrag56.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+
+ <!--//Aufgabe 57-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 57
+
+Bestimmen Sie die Lösungsmenge der 
+Ungleichungen für x ∈ ℝ:
+
+ 3
+--- < 2x - 5
+ x</strong> 
+
+<button  onclick="window.open('Ungleich_Aufgabe57.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 58-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 58
+
+Bestimmen Sie die Lösungsmenge der 
+Ungleichung für x ∈ ℝ:
+
+(x + 2)(x - 4)(x + 5) ≥ 0              </strong>
+
+- 5 ≤ x ≤ <input type="text" id="Eintrag58" maxlength="2" size="1" style= background-color:yellow ></input> v x ≥ 4 <button id="Pruef58" onclick="Aufgabe58()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe58() { 
+                                                
+                          if (Eintrag58.value=="-2") {alert("Richtig"); document.getElementById("Pruef58").disabled= true;
+                          }  
+                           
+                          else if (Eintrag58.value!=="-2" && Eintrag58.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag58").value="-2"; window.open('Ungleich_Aufgabe58.html');           
+                          document.getElementById("Pruef58").disabled= true;}
+                               
+                          else if (Eintrag58.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 59-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 59
+
+Bestimmen Sie die Lösungsmenge der 
+Ungleichung für x ∈ ℝ:
+
+(21 - x)(4x + 15)(0,25 - 0,375x) < 0  </strong> 
+
+<button  onclick="window.open('Ungleich_Aufgabe59.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 60-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 60
+
+Bestimmen Sie die Lösungsmengen der 
+Ungleichungen für x ∈ ℝ:
+
+(x - 14)(x<sup>2</sup> + 5) > 0       </strong>
+
+x > <input type="text" id="Eintrag60" maxlength="2" size="1" style= background-color:yellow ></input> <button id="Pruef60" onclick="Aufgabe60()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe60() { 
+                                                
+                          if (Eintrag60.value=="14") {alert("Richtig"); document.getElementById("Pruef60").disabled= true;
+                          }  
+                           
+                          else if (Eintrag60.value!=="14" && Eintrag60.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag60").value="14"; window.open('Ungleich_Aufgabe60.html');           
+                          document.getElementById("Pruef60").disabled= true;}
+                               
+                          else if (Eintrag60.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+<!--//Aufgabe 61-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 61
+
+Bestimmen Sie die Lösungsmenge der 
+Ungleichung für x ∈ ℝ:
+
+3,2(8x - 6)(5x<sup>2</sup> + 10)(24x<sup>2</sup> - 3x) ≤ 0  </strong> 
+
+<button  onclick="window.open('Ungleich_Aufgabe61.html');" >Lösung</button></p></pre>
+
+
+	      <button type="button" class ="Aufgabe" onclick="window.open('index.html'); window.close('Ungleich4.html');">zurück...</button>                
+                    
+        <script>
+            document.body.addEventListener("input", function(inputEvent) {
+              const eingabeFeld = inputEvent.target;
+              if (eingabeFeld.maxLength > 0 && eingabeFeld.value.length > eingabeFeld.maxLength) {
+                eingabeFeld.value = eingabeFeld.value.substr(0, eingabeFeld.maxLength);
+              }
+            })
+          </script>

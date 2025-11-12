@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="de"><!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ungleichungen</title>
+  
+</head>
+<body style="background-color: #B9D1EA;">
+
+    <style> 
+        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em; }
+        .Text2 { font-size: 1em; font-family: Verdana,Sans-serif;margin-top:1em;margin-left:0.5em;}
+        .Text3 { font-size: 0.8em;background-color: white; font-family: Verdana,Sans-serif;margin:0.5em; }
+        
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;}
+        button {background-color:white; font-family: Verdana, Sans-serif; }
+        input {background-color:yellow; }
+    </style>
+
+<p class="Text1">Wie löse ich Matheaufgaben?</p>
+<p class="Text1">Ungleichungen</p>
+
+<p class="Text2"><span style= "background-color:white;">Sie sehen ein gelbes Eingabefeld und die <br>Schalter: Prüfen und Lösung.</span></p>
+<p class="Text2"><span style= "background-color:white;">Tragen Sie Ihr Ergebnis ein, prüfen Sie es <br> oder starten Sie eine Lösung.</span></p>
+        
+<!--//Aufgabe 1-->
+
+<pre><p class="Aufgabe"><strong>Aufgabe 1
+
+Bestimmen Sie die Lösungsmenge der 
+Ungleichungen für x ∈ ℚ:
+
+a) x + 5 < 9
+b) 4 + x ≤ 7
+c) x - 5 > 2
+d) 15 ≥ x + 7
+e) 8 < 9 - x
+f) 3 ≤ x - 6      </strong>
+
+<button  onclick="window.open('Ungleich_Aufgabe1.html');" >Lösung</button></p></pre>
+
+
+<!--//Aufgabe 2-->
+
+<pre><p class ="Aufgabe" ><strong>Aufgabe 2
+
+Bestimmen Sie die Lösungsmenge der 
+Ungleichungen für x ∈ ℚ:
+
+a) 3x + 17 ≤ 29
+b) 19 + 4x ≥ 27
+c) 6x - 11 > 13
+d) 16 - 2x > 12
+e) 25 + x < 36
+f) 7x - 18 ≥ 2x - 13 </strong> x ≥ <input type="text" id="Eintrag2" maxlength="1" size="1" style= background-color:yellow ></input> <button id="Pruef2" onclick="Aufgabe2()">Prüfen</button></p></pre>
+ 
+                      <script>
+                        function Aufgabe2() { 
+                                                
+                          if (Eintrag2.value=="1") {alert("Richtig"); document.getElementById("Pruef2").disabled= true;
+                          }  
+                           
+                          else if (Eintrag2.value!=="1" && Eintrag2.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag2").value="1"; window.open('Ungleich_Aufgabe2.html');           
+                          document.getElementById("Pruef2").disabled= true;}
+                               
+                          else if (Eintrag2.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+
+        <!--//Aufgabe 3-->                  
+
+  <pre><p class="Aufgabe"><strong>Aufgabe 3
+
+Bestimmen Sie die Lösungsmenge der 
+Ungleichungen für x ∈ ℚ:
+
+a) 15x ≤ 105
+b) 2x ≥ 22
+c) 112 < 5x - 3
+d) 9 - 3x > 6 </strong>
+
+<button  onclick="window.open('Ungleich_Aufgabe3.html');">Lösung</button></p></pre>
+
+<!--//Aufgabe 4-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 4
+
+Bestimmen Sie die Lösungsmenge der 
+Ungleichungen für x ∈ ℚ:
+
+a) 4 * (x + 7) > 44
+b) 15 * (2x - 2) ≤ - 15
+c) 3 * (8 - 5x) ≥ 4 - 13x  </strong>  x ≤ <input type="text" id="Eintrag4" maxlength="2" size="1" style= background-color:yellow ></input> <button id="Pruef4" onclick="Aufgabe4()">Prüfen</button>  
+<strong>d) 4 * (3x - 1) ≤ 19x - 4 </strong></p></pre>
+ 
+                      <script>
+                        function Aufgabe4() { 
+                                                
+                          if (Eintrag4.value=="10") {alert("Richtig"); document.getElementById("Pruef4").disabled= true;
+                          }  
+                           
+                          else if (Eintrag4.value!=="10" && Eintrag4.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag4").value="10"; window.open('Ungleich_Aufgabe4.html');           
+                          document.getElementById("Pruef4").disabled= true;}
+                               
+                          else if (Eintrag4.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+
+ <!--//Aufgabe 5-->  
+
+  <pre><p class="Aufgabe"><strong>Aufgabe 5
+
+Bestimmen Sie die Lösungsmenge der 
+Ungleichungen für x ∈ ℚ:
+
+a) 2 * (3x + 2) < 2 * (38 - x) - x
+b) 3 * (2 - x) - x < x - 3
+c) 8x - 9 * (2x - 5) > 4 * (3 + x) + 5
+d) (x + 3) * (-1) > 17 * (2x + 3) + 16
+e) 3 * (27 - 12x) + 40x > x - 1  </strong>  
+
+<button  onclick="window.open('Ungleich_Aufgabe5.html');">Lösung</button></p></pre>
+
+<!--//Aufgabe 6-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 6
+
+Bestimmen Sie die Lösungsmenge der 
+Ungleichungen für x ∈ ℚ:
+
+a) (x + 5)² < (x - 3)²
+b) (x + 4)² ≤ (x - 3)(x + 3) </strong> x ≤ <input type="text" id="Eintrag6" maxlength="5" size="2" style= background-color:yellow ></input> <button id="Pruef6" onclick="Aufgabe6()">Prüfen</button>    
+<strong>c) (x - 4)(5 + x) ≥ (x + 1)²
+d) (3x - 4)² < (3x - 2)(3x + 2) </strong> </p></pre>
+ 
+                      <script>
+                        function Aufgabe6() { 
+                                                
+                          if (Eintrag6.value=="-3,125") {alert("Richtig"); document.getElementById("Pruef6").disabled= true;
+                          }  
+                           
+                          else if (Eintrag6.value!=="-3,125" && Eintrag6.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag6").value="-3,125"; window.open('Ungleich_Aufgabe6.html');           
+                          document.getElementById("Pruef6").disabled= true;}
+                               
+                          else if (Eintrag6.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+  <!--//Aufgabe 7-->   
+
+  <pre><p class="Aufgabe"><strong>Aufgabe 7
+
+Bestimmen Sie die Lösungsmenge der 
+Ungleichungen für x ∈ ℚ:
+
+a) -3(1 - 5x) + 3(8 - 7x) ≥ 3(-9x - 18) - 114
+b) -7(8 - 5y) + 3(7 + 4y) ≤ 8(9y + 4) - 117
+c) 8(9 - 2x) + 4(8 - 3x) > -9(4 - 7x) + 78
+d) -2(4 - 3x) + 7(-4 - 5x) < 2(5x + 1) + 184 </strong>
+
+<button  onclick="window.open('Ungleich_Aufgabe7.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 8-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 8
+
+Bestimmen Sie die Lösungsmenge der 
+Ungleichungen für x ∈ ℚ:
+
+             5
+a) 5x - 4 < --- x + 6
+             6
+
+             3x
+b) 4x + 2 ≥ ---- + 6
+              7 
+
+         1
+c) 7x + --- < 14x - 1,5  </strong>  x > <input type="text" id="Eintrag8" maxlength="4" size="1" style= background-color:yellow ></input> <button id="Pruef8" onclick="Aufgabe8()">Prüfen</button>   
+<strong>         4 </strong> </p></pre>
+ 
+                      <script>
+                        function Aufgabe8() { 
+                                                
+                          if (Eintrag8.value=="0,25") {alert("Richtig"); document.getElementById("Pruef8").disabled= true;
+                          }  
+                           
+                          else if (Eintrag8.value!=="0,25" && Eintrag8.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag8").value="0,25"; window.open('Ungleich_Aufgabe8.html');           
+                          document.getElementById("Pruef8").disabled= true;}
+                               
+                          else if (Eintrag8.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+  <!--//Aufgabe 9-->   
+
+  <pre><p class="Aufgabe"><strong>Aufgabe 9
+
+Bestimmen Sie die Lösungsmenge der 
+Ungleichungen für x ∈ ℚ:
+
+    3x + 6        5x - 3
+a) ------- - 4 > -------- + 2
+      9              4 
+
+    7x + 6         9 + 8x 
+b) -------- - 1 < -------- + 2
+        6            10
+
+    7x + 3         6x + 2 
+c) -------- + 9 ≤ --------
+       5              4
+
+    7x + 6         10x - 7
+d) -------- - 5 < ---------
+       3               5 </strong> 
+
+<button  onclick="window.open('Ungleich_Aufgabe9.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 10-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 10
+
+Bestimmen Sie die Lösungsmenge der 
+Ungleichungen für x ∈ ℚ:
+
+    4        13     2       1
+a) ---x - 18---- < ---x + 6---
+    3        15     5       3
+
+        3(x + 1)         x - 1
+b) 2 + ---------- < 3 - -------
+            8              4
+
+    2x - 1     x + 6
+c) -------- < -------
+       3         2
+
+    3x - 1     13 - x     7x     11(x + 3)
+d) -------- - -------- > ---- - -----------     
+       5          2        3         6 </strong>
+
+d) x > <input type="text" id="Eintrag10" maxlength="1" size="1" style= background-color:yellow ></input> <button id="Pruef10" onclick="Aufgabe10()">Prüfen</button></p></pre>
+   
+                      <script>
+                        function Aufgabe10() { 
+                                                
+                          if (Eintrag10.value=="2") {alert("Richtig"); document.getElementById("Pruef10").disabled= true;
+                          }  
+                           
+                          else if (Eintrag10.value!=="2" && Eintrag10.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag10").value="2"; window.open('Ungleich_Aufgabe10.html');           
+                          document.getElementById("Pruef10").disabled= true;}
+                               
+                          else if (Eintrag10.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>                                   
+
+ 	      <button type="button" class ="Aufgabe" onclick="window.open('index.html'); window.close('Ungleich.html');">zurück...</button>                
+                    
+        <script>
+            document.body.addEventListener("input", function(inputEvent) {
+              const eingabeFeld = inputEvent.target;
+              if (eingabeFeld.maxLength > 0 && eingabeFeld.value.length > eingabeFeld.maxLength) {
+                eingabeFeld.value = eingabeFeld.value.substr(0, eingabeFeld.maxLength);
+              }
+            })
+          </script><br>
+        
+         
+
+        </body></html>
+
+                      
+                    

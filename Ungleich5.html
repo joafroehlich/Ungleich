@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="de"><!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ungleichungen</title>
+  
+</head>
+<body style="background-color: #B9D1EA;">
+
+    <style> 
+        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em; }
+        .Text2 { font-size: 1em; font-family: Verdana,Sans-serif;margin-top:1em;margin-left:0.5em;}
+        .Text3 { font-size: 0.8em;background-color: white; font-family: Verdana,Sans-serif;margin:0.5em; }
+        
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;}
+        button {background-color:white; font-family: Verdana, Sans-serif; }
+        input {background-color:yellow; }
+    </style>
+
+<p class="Text1">Wie löse ich Matheaufgaben?</p>
+<p class="Text1">Ungleichungen</p>  
+
+<p class="Text2"><span style= "background-color:white;">Sie sehen ein gelbes Eingabefeld und die <br>Schalter: Prüfen und Lösung.</span></p>
+<p class="Text2"><span style= "background-color:white;">Tragen Sie Ihr Ergebnis ein, prüfen Sie es <br> oder starten Sie eine Lösung.</span></p>
+
+<!--//Aufgabe 62-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 62
+
+Zeichnen Sie die Graphen der Ungleichungen:
+
+a) 3x + 4y ≤ 12
+
+b) 7x - 3y > 21
+
+c) 2(2,5x - 4) > 5y - 1     
+
+In der Lösungsmenge welcher Aufgabe liegt der Punkt (-3|-15)?
+
+In <button id ="a" onclick="Schalter1('a')">a</button>, <button id ="b" onclick="Schalter1('b')" >b</button> oder <button id ="c" onclick="Schalter1('c')" >c</button>?</strong>
+<button  id = "L62" onclick="window.open('Ungleich_Aufgabe62.html');" style = "display:none;" >Lösung</button></p></pre>
+
+                      <script>
+                    function Schalter1(buttonId){
+                                                
+                          if (buttonId==="b") {alert("Richtig"); document.getElementById("a").disabled= true;document.getElementById("b").disabled= true;document.getElementById("c").disabled= true;
+                       }                                                                    
+                          else if (buttonId ==="a" || buttonId ==="c" ) {alert("Leider falsch. b ist richtig.");            
+                          document.getElementById("a").disabled= true;document.getElementById("b").disabled= true;
+                          document.getElementById("c").disabled= true; document.getElementById("L62").style= "display:inline; margin-top:1em; "
+                          }}                                            
+                          
+                                          
+                        
+                         
+                      </script> 
+                      
+<!--//Aufgabe 63-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 63
+
+Zeichnen Sie die Graphen der Ungleichungen:
+
+a) y ≥ 0,5x + 1
+
+b) y ≤ - 2x + 5   </strong> 
+
+<button  onclick="window.open('Ungleich_Aufgabe63.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 64-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 64
+
+Wie lautet die lineare Ungleichung 
+
+a) ausschließlich der Randgeraden?
+
+<img src="Ungleich_64a.jpg"></strong>
+
+y > <input type="text" id="Eintrag64" maxlength="2" size="1" style= background-color:yellow ></input> x - 1 <button id="Pruef64" onclick="Aufgabe64()">Prüfen</button>
+
+<strong>b) einschließlich der Randgeraden? </strong></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe64() { 
+                                                
+                          if (Eintrag64.value=="-2") {alert("Richtig"); document.getElementById("Pruef64").disabled= true;
+                          }  
+                           
+                          else if (Eintrag64.value!=="-2" && Eintrag64.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag64").value="-2"; window.open('Ungleich_Aufgabe64.html');           
+                          document.getElementById("Pruef64").disabled= true;}
+                               
+                          else if (Eintrag64.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+<!--//Aufgabe 65-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 65
+
+Ein Zweiradgeschäft kauft Fahrräder und Mopeds 
+unter folgenden Bedingungen auf Vorrat.
+Das Lager fasst 18 Zweiräder. Es sollen 
+mindestens 8 Fahrräder und 3 Mopeds sein.
+Ein Fahrrad kostet 200 €, ein Moped 800 €.
+Es stehen 9 000 € zur Verfügung.
+Stellen Sie ein Ungleichungssystem auf, und
+zeichnen Sie das Planungsgebiet.</strong> 
+
+<button  onclick="window.open('Ungleich_Aufgabe65.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 66-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 66
+
+Für eine Feier mit 26 Personen stehen für 
+Getränke 25 € zur Verfügung. 
+Eine Dose Orangensaft kostet 0,75 €, eine Dose 
+Limonade 0.85 €. Die Anzahl der Dosen soll 
+größer als die der Teilnehmer sein.        
+Ist diese Kombination möglich?  O 20 L 10</strong>
+
+<button id ="ja" onclick="Schalter2('ja')">ja</button> <button id ="nein" onclick="Schalter2('nein')" >nein</button> </strong>
+<button  id = "L66" onclick="window.open('Ungleich_Aufgabe66.html');" style = "display:none;" >Lösung</button></p></pre>
+
+                      <script>
+                    function Schalter2(buttonId){
+                                                
+                          if (buttonId==="ja") {alert("Richtig"); document.getElementById("ja").disabled= true;document.getElementById("nein").disabled= true;
+                       }                                                                    
+                          else if (buttonId ==="nein" ) {alert("Leider falsch. Ja ist richtig.");            
+                          document.getElementById("ja").disabled= true;document.getElementById("nein").disabled= true;
+                          document.getElementById("L66").style= "display:inline; margin-top:1em; "
+                          }}  
+                                             
+                      </script> 
+                      
+<!--//Aufgabe 67-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 67
+
+Für den Abtransport von 31 t Bauschutt stehen 
+2 Lkws zur Verfügung. Der eine kann 3 t, der 
+andere 8 t laden. Geben Sie 3 Möglichkeiten für 
+den Lkw Einsatz an, wenn höchstens 10 Fahrten 
+vorgeschrieben sind. </strong> 
+
+<button  onclick="window.open('Ungleich_Aufgabe67.html');" >Lösung</button></p></pre> 
+
+<!--//Aufgabe 68-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 68
+
+Eine Autofabrik stellt höchstens 400 Fahrzeuge 
+pro Tag her, davon mindestens 200 Pkw und 
+40 Kombis. Zeichnen Sie das Planungsgebiet.
+Liegt die Kombination 200 Pkw und 200 Kombis 
+im Planungsgebiet?   </strong>
+
+<button id ="ja1" onclick="Schalter3('ja1')">ja</button> <button id ="nein1" onclick="Schalter3('nein1')" >nein</button> </strong>
+<button  id = "L68" onclick="window.open('Ungleich_Aufgabe68.html');" style = "display:none;" >Lösung</button></p></pre>
+
+                      <script>
+                    function Schalter3(buttonId){
+                                                
+                          if (buttonId==="ja1") {alert("Richtig"); document.getElementById("ja1").disabled= true;document.getElementById("nein1").disabled= true;
+                       }                                                                    
+                          else if (buttonId ==="nein1" ) {alert("Leider falsch. Ja ist richtig.");            
+                          document.getElementById("ja1").disabled= true;document.getElementById("nein1").disabled= true;
+                          document.getElementById("L68").style= "display:inline; margin-top:1em; "
+                          }}  
+                                             
+                      </script> 
+                      
+<!--//Aufgabe 69-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 69
+
+Ein Landwirt baut auf einer Fläche von maximal 
+30 ha Weizen und Kartoffeln an.
+Er will auf mindestens 10 ha Weizen und auf 5 ha  
+Kartoffeln anbauen. 
+Zeichnen Sie das Planungsgebiet. </strong> 
+
+<button  onclick="window.open('Ungleich_Aufgabe69.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 70-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 70
+
+Eine Getränkefirma kann höchstens 2 000 Flaschen 
+pro Tag abfüllen. Vom Getränk A können 1 200
+Flaschen, vom Getränk B 1 600 Flaschen abgefüllt 
+werden. Welche Kombination (A|B) ist nicht möglich?
+a) (1 000|600), 
+b) (400|1 600), 
+c) (800| 1 200), 
+d) (1 400|1 400) </strong>
+
+<button id ="a1" onclick="Schalter4('a1')">a</button> <button id ="b1" onclick="Schalter4('b1')" >b</button> <button id ="c1" onclick="Schalter4('c1')" >c</button> <button id ="d" onclick="Schalter4('d')" >d</button></strong>
+<button  id = "L70" onclick="window.open('Ungleich_Aufgabe70.html');" style = "display:none;" >Lösung</button></p></pre>
+
+                      <script>
+                    function Schalter4(buttonId){
+                                                
+                          if (buttonId==="d") {alert("Richtig"); document.getElementById("a1").disabled= true;document.getElementById("b1").disabled= true;document.getElementById("c1").disabled= true;document.getElementById("d").disabled= true;
+                       }                                                                    
+                          else if (buttonId ==="a1" || buttonId ==="b1" || buttonId ==="c1" ) {alert("Leider falsch. d ist richtig.");            
+                          document.getElementById("a1").disabled= true;document.getElementById("b1").disabled= true;
+                          document.getElementById("c1").disabled= true; document.getElementById("d").disabled= true;document.getElementById("L70").style= "display:inline; margin-top:1em; "
+                          }}                                            
+                          
+                                          
+                        
+                         
+                      </script> 
+                      
+<!--//Aufgabe 71-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 71
+
+An Drehbank 1 und Drehbank 2 werden Werkstücke 
+W und U bearbeitet. 
+Drehbank 1 braucht für W 2,5 hfür U 4,75 h. 
+Drehbank 2 braucht für W 3 h für U 4,5 h.
+Wie viel W und U können in 24 h hergestellt werden?   </strong> 
+
+<button  onclick="window.open('Ungleich_Aufgabe71.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 72-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 72
+
+Für die Herstellung von 2 Modellen K<sub>1</sub> und K<sub>2</sub> auf den
+Bearbeitungsmaschinen M<sub>1</sub>, M<sub>2</sub> und M<sub>3</sub> ist der 
+Zeitbedarf in h in der Matrix dargestellt:
+      M<sub>1</sub>       M<sub>2</sub>      M<sub>3</sub>
+K<sub>1</sub>    1       2/3      1 
+K<sub>2</sub>    1       4/3     2/3
+Wie viele K<sub>1</sub> und K<sub>2</sub> können auf M<sub>1</sub> und M<sub>2</sub> in 8 h 
+hergestellt werden?    </strong>
+
+Es sind <input type="text" id="Eintrag72" maxlength="1" size="1" style= background-color:yellow ></input> K<sub>1</sub> und 8 K<sub>2</sub>. <button id="Pruef72" onclick="Aufgabe72()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe72() { 
+                                                
+                          if (Eintrag72.value=="8") {alert("Richtig"); document.getElementById("Pruef72").disabled= true;
+                          }  
+                           
+                          else if (Eintrag72.value!=="8" && Eintrag72.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag72").value="8"; window.open('Ungleich_Aufgabe72.html');           
+                          document.getElementById("Pruef72").disabled= true;}
+                               
+                          else if (Eintrag72.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+<!--//Aufgabe 73-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 73
+
+Zu einem Lehrbuch für 16 € gibt es eine CD mit 
+Aufgaben und Lösungen zu 48 €. 
+Eine Buchhandlung will mindestens 15 CDs und 
+25 Lehrbücher einkaufen, aber nicht mahr als 
+2 400 € ausgeben. 
+Zeichnen Sie das Planungsgebiet.    </strong> 
+
+<button  onclick="window.open('Ungleich_Aufgabe73.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 74-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 74
+
+Für Gardinen gibt es Stoffballen erster und 
+zweiter Qualität. Der von erster Qualität liefert 
+20 m, der andere 25 m. Für die Verarbeitung 
+von Ballen erster Qualität braucht man 18 h, für 
+die anderen 27 h. In 360 Stunden sollen nicht 
+mehr als 350 m verarbeitet werden. Sind 5 
+Ballen erster Qualität und 10 zweiter in dieser 
+Zeit zu schaffen? </strong>
+
+<button id ="ja2" onclick="Schalter5('ja2')">ja</button> <button id ="nein2" onclick="Schalter5('nein2')" >nein</button> </strong>
+<button  id = "L674" onclick="window.open('Ungleich_Aufgabe74.html');" style = "display:none;" >Lösung</button></p></pre>
+
+                      <script>
+                    function Schalter5(buttonId){
+                                                
+                          if (buttonId==="ja2") {alert("Richtig"); document.getElementById("ja2").disabled= true;document.getElementById("nein2").disabled= true;
+                       }                                                                    
+                          else if (buttonId ==="nein2" ) {alert("Leider falsch. Ja ist richtig.");            
+                          document.getElementById("ja2").disabled= true;document.getElementById("nein2").disabled= true;
+                          document.getElementById("L74").style= "display:inline; margin-top:1em; "
+                          }}  
+                                             
+                      </script> 
+                      
+<!--//Aufgabe 75-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 75
+
+Ein Einfamilienhaus kostet bei einer Baufirma 
+200 000 €, ein Zweifamilienhaus 250 000 €. 
+Es stehen Grundstücke von 1 000 m² für ein 
+Einfamilienhaus und 1 500 m² für ein 
+Zweifamilienhaus zur Verfügung. Das 
+Baugelände ist 15 000 m² groß, und für den 
+Bau der Häuser sind maximal 3 000 000 € 
+vorgesehen. Zeichnen Sie das Planungsgebiet. </strong> 
+
+<button  onclick="window.open('Ungleich_Aufgabe75.html');" >Lösung</button></p></pre>
+
+	      <button type="button" class ="Aufgabe" onclick="window.open('index.html'); window.close('Ungleich5.html');">zurück...</button>                
+                    
+        <script>
+            document.body.addEventListener("input", function(inputEvent) {
+              const eingabeFeld = inputEvent.target;
+              if (eingabeFeld.maxLength > 0 && eingabeFeld.value.length > eingabeFeld.maxLength) {
+                eingabeFeld.value = eingabeFeld.value.substr(0, eingabeFeld.maxLength);
+              }
+            })
+          </script>

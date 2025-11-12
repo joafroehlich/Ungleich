@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="de"><!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ungleichungen</title>
+  
+</head>
+<body style="background-color: #B9D1EA;">
+
+    <style> 
+        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em; }
+        .Text2 { font-size: 1em; font-family: Verdana,Sans-serif;margin-top:1em;margin-left:0.5em;}
+        .Text3 { font-size: 0.8em;background-color: white; font-family: Verdana,Sans-serif;margin:0.5em; }
+        
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;}
+        button {background-color:white; font-family: Verdana, Sans-serif; }
+        input {background-color:yellow; }
+    </style>
+
+<p class="Text1">Wie löse ich Matheaufgaben?</p>
+<p class="Text1">Ungleichungen</p>  
+
+<p class="Text2"><span style= "background-color:white;">Sie sehen ein gelbes Eingabefeld und die <br>Schalter: Prüfen und Lösung.</span></p>
+<p class="Text2"><span style= "background-color:white;">Tragen Sie Ihr Ergebnis ein, prüfen Sie es <br> oder starten Sie eine Lösung.</span></p>
+
+<!--//Aufgabe 76-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 76
+
+Während eines Basars soll Kaffee und Tee 
+angeboten werden. Der Becher Kaffee kostet in 
+der Herstellung 0,3 €, Tee 0,2 €. Beide sollen 
+pro Becher für 1 € angeboten werden. Es wird 
+mit einem Verkauf von insgesamt maximal 500 
+Bechern gerechnet. Die Veranstalter gehen 
+davon aus, dass mindestens so viel Kaffee wie 
+Tee, aber maximal doppelt so viel getrunken 
+wird. Mit welchem maximalen Gewinn ist zu 
+rechnen?      </strong>
+
+G<sub>max</sub> = <input type="text" id="Eintrag76" maxlength="3" size="1" style= background-color:yellow ></input> € <button id="Pruef76" onclick="Aufgabe76()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe76() { 
+                                                
+                          if (Eintrag76.value=="375") {alert("Richtig"); document.getElementById("Pruef76").disabled= true;
+                          }  
+                           
+                          else if (Eintrag76.value!=="375" && Eintrag76.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag76").value="375"; window.open('Ungleich_Aufgabe76.html');           
+                          document.getElementById("Pruef76").disabled= true;}
+                               
+                          else if (Eintrag76.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 77-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 77
+
+Die Bonbonmischung A enthält 10% Karamell, 
+20% Drops und 10% Fruchtbonbons. 
+Die Mischung B enthält 20% Karamell, 10% Drops 
+und 60% Fruchtbonbons. 
+A kostet 8 € pro kg, B 12 €/kg. 
+Eine neue Mischung aus A und B soll 1 kg Karamell, 
+0,8 kg Drops und 1,8 kg Fruchtbonbons enthalten. 
+Wie viel kg von A und B sind nötig, wenn die Mischung 
+möglichst billig sein soll? </strong> 
+
+<button  onclick="window.open('Ungleich_Aufgabe77.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 78--> 
+
+<pre><p class ="Aufgabe" ><strong>Aufgabe 78
+
+Eine Baumschule hat für die Neuanpflanzung von 
+Kiefern und Tannen eine maximale Fäche von 
+3 ha zur Verfügung. Es sollen mindestens 1 ha 
+Tannen und 0,5 ha Kiefern angepflanzt werden. 
+Beim Verkauf erzielt die Schule einen Gewinn von 
+800 €/ha für die Tannen und einen von 900 €/ha 
+für die Kiefern. Wie hoch ist der maximale Gewinn? 
+Wie groß müssen die Anbauflächen für Tannen 
+und Kiefern sein?  </strong> 
+
+Kiefern  <input type="text" id="Eintrag78" maxlength="1" size="1" style= background-color:yellow ></input> ha <button id="Pruef78" onclick="Aufgabe78()">Prüfen</button></p></pre>  
+
+                      <script>
+                        function Aufgabe78() { 
+                                                
+                          if (Eintrag78.value=="2") {alert("Richtig"); document.getElementById("Pruef78").disabled= true; 
+                          }  
+                           
+                          else if (Eintrag78.value!=="2" && Eintrag78.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt.");            
+                          document.getElementById("Pruef78").disabled= true; document.getElementById("Eintrag78").value="2"; window.open('Ungleich_Aufgabe78.html');}
+                               
+                          else if (Eintrag78.value=="") {alert("Bitte eine Eingabe machen")}}
+
+                          
+                          </script>
+                          
+<!--//Aufgabe 79-->
+                          
+<pre><p class="Aufgabe"><strong>Aufgabe 79
+
+Für den Einkauf von 2 neuen Geräten G und H 
+stehen einem Kaufhaus 8 000 € zur Verfügung. 
+G kostet 80 €, H 120 €. Die Anzahl von H soll
+maximal das Dreifache von G sein. Der Gewinn 
+pro verkauftem G beträgt 10 €, bei H 12 €.
+Wie viele G und H sollte das Kaufhaus einkaufen,
+um maximalen Gewinn zu erzielen? </strong> 
+
+<button  onclick="window.open('Ungleich_Aufgabe79.html');" >Lösung</button></p></pre>                          
+
+<!--//Aufgabe 80-->
+
+<pre><p class ="Aufgabe" ><strong>Aufgabe 80
+
+Eine Firma stellt zwei Geräte G₁ und G₂ her und 
+kann monatlich 150 G₁ und 120 G₂ montieren. 
+Ein Zulieferer versorgt die Firma mit maximal 
+200 Gehäusen pro Monat. Für die Elektronik 
+braucht sie zum Einbau 2h für G₁ und 5 h für G₂ 
+bei monatlich maximal 750 Arbeitsstunden. 
+G₁ liefert 280 €, G₂ 350 € Gewinn. 
+Wie hoch ist der maximale Gewinn?    </strong> 
+
+G<sub>max</sub> = <input type="text" id="Eintrag80" maxlength="5" size="2" style= background-color:yellow ></input> € <button id="Pruef80" onclick="Aufgabe80()">Prüfen</button></p></pre>  
+
+                      <script>
+                        function Aufgabe80() { 
+                                                
+                          if (Eintrag80.value=="64400") {alert("Richtig"); document.getElementById("Pruef80").disabled= true; 
+                          }  
+                           
+                          else if (Eintrag80.value!=="64400" && Eintrag80.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt.");            
+                          document.getElementById("Pruef80").disabled= true; document.getElementById("Eintrag80").value="64400"; window.open('Ungleich_Aufgabe80.html');}
+                               
+                          else if (Eintrag80.value=="") {alert("Bitte eine Eingabe machen")}}
+
+                        
+                           </script>
+
+<!--//Aufgabe 81-->                           
+                                                     
+<pre><p class="Aufgabe"><strong>Aufgabe 81
+
+In der Grube 1 fördern 50 Arbeiter 9 t Groberz, 
+3 t Mittelerz und 6 t Feinerz pro Tag. 
+In Grube 2 fördern 75 Arbeiter 3 t, 3 t und 18 t. 
+Wöchentlich können mindestens 18 t Groberz, 
+12 t Mittelerz und 36 t Feinerz verarbeitet werden. 
+Wie viele Tage wird in jeder Grube gefördert, 
+wenn die Betriebskosten pro Tag und Tonne in Grube 1
+300 €, in Grube 2 240 € betragen und sie minimal 
+sein sollen? </strong> 
+
+<button  onclick="window.open('Ungleich_Aufgabe81.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 82--> 
+
+<pre><p class ="Aufgabe" ><strong>Aufgabe 82
+
+Rindfleisch mit 100 g Fettanteil pro kg kostet 
+12,40 €/kg. Schweinefleisch mit 400 g Fettanteil 
+pro kg kostet 11,20 €/kg. 
+Welche Mengen Rind- und Schweinefleisch muss man 
+einkaufen, wenn sie mindestens 2 400 g fettfreies 
+und 600 g fettes Fleisch enthalten sollen und der 
+Einkauf am billigsten sein soll.           </strong> 
+
+<input type="text" id="Eintrag82" maxlength="1" size="1" style= background-color:yellow ></input> kg Rindfleisch, 1 kg Schweinefleisch <button id="Pruef82" onclick="Aufgabe82()">Prüfen</button> </p></pre>  
+
+                      <script>
+                        function Aufgabe82() { 
+                                                
+                          if (Eintrag82.value=="2") {alert("Richtig"); document.getElementById("Pruef82").disabled= true; 
+                          }  
+                           
+                          else if (Eintrag82.value!=="2" && Eintrag82.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt.");            
+                          document.getElementById("Pruef82").disabled= true; document.getElementById("Eintrag82").value="2"; window.open('Ungleich_Aufgabe82.html');}
+                               
+                          else if (Eintrag82.value=="") {alert("Bitte eine Eingabe machen")}}
+
+                          
+                          </script>
+                          
+<!--//Aufgabe 83-->                          
+
+<pre><p class="Aufgabe"><strong>Aufgabe 83
+
+Fleisch und Hülsenfrüchte enthalten pro kg
+                     Fleisch     Hülsenfrüchte                                
+Wärmeenergie in kJ   16 000          8 000   
+Eiweiß in g              80            400
+Fett in g               400             80
+Kohlenhydrate in g      320            320
+Sonstige in g           200            200 
+Preis in €/kg            10              8    
+Eine Notration soll mindestens 6 700 kJ, 
+100 g Eiweiß, 100 g Fett, 200 g Kohlenhydrate 
+und eine unbestimmte Menge Sonstige enthalten. 
+Mit welchen Mengen Fleisch und Hülsenfrüchten 
+wird sie am billigsten?  </strong>
+
+<button  onclick="window.open('Ungleich_Aufgabe83.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 84-->
+
+<pre><p class ="Aufgabe" ><strong>Aufgabe 84
+
+Eine Fabrik stellt zwei unterschiedliche 
+Bauteile in 2 getrennten Werken her. Für 
+Bauteil A sind in Werk 1 5 Arbeitstakte und 
+anschließend in Werk 2 noch 2 Arbeitstakte 
+nötig. Bauteil B benötigt 3 Arbeitstakte in 
+Werk 1 wie in Werk 2. Werk 1 hat eine 
+maximale Kapazität von 240 Arbeitstakten 
+Werk 2 eine von 180. Jedes Bauteil A liefert 
+einen Gewinn von 240 €, B einen von 160 €. 
+Bei welchen Stückzahlen ist der Gewinn G 
+am größten? </strong>
+
+Bei 30 A und <input type="text" id="Eintrag84" maxlength="2" size="1" style= background-color:yellow ></input> B <button id="Pruef84" onclick="Aufgabe84()">Prüfen</button></p></pre>  
+
+                      <script>
+                        function Aufgabe84() { 
+                                                
+                          if (Eintrag84.value=="30") {alert("Richtig"); document.getElementById("Pruef84").disabled= true; 
+                          }  
+                           
+                          else if (Eintrag84.value!=="30" && Eintrag84.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt.");            
+                          document.getElementById("Pruef84").disabled= true; document.getElementById("Eintrag84").value="30"; window.open('Ungleich_Aufgabe84.html');}
+                               
+                          else if (Eintrag84.value=="") {alert("Bitte eine Eingabe machen")}}
+
+                         
+                          </script> 
+
+<!--//Aufgabe 85-->                          
+                          
+<pre><p class="Aufgabe"><strong>Aufgabe 85
+
+Für eine elektrische Montage haben die Monteure
+in ihren Behältern 21 600 cm<sup>3</sup> Platz für Batterien. 
+Ihnen werden Batterien vom Typ A mit 200 cm<sup>3</sup> 
+Raumbedarf und vom Typ B mit 300 cm<sup>3</sup> 
+angeboten. Typ A kostet 10 € Typ B 5 €. Typ A
+liefert 18 Stunden lang Strom Typ B 16 Stunden.
+Wieviel Batterien von Typ A und B sollten die 
+Monteure kaufen, wenn die Nutzungsdauer 
+maximal sein soll und ihnen 500 € für den  
+Einkauf zur Verfügung stehen? </strong> 
+
+<button  onclick="window.open('Ungleich_Aufgabe85.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 86-->
+
+<pre><p class ="Aufgabe" ><strong>Aufgabe 86
+
+Eine Firma kann 400 Dickdrahtrollen und 
+300 Dünndrahtrollen pro Tag herstellen. 
+Sie liefert täglich 500 Rollen aus. 
+Pro Dickdrahtrolle verdient sie 10 €, 
+pro Dünndrahtrolle 15 €. 
+Wieviel Rollen Dick- bzw. Dünndraht muss 
+sie pro Tag verkaufen, um einen möglichst 
+großen Gewinn G zu erzielen?           </strong> 
+
+<input type="text" id="Eintrag86" maxlength="3" size="1" style= background-color:yellow ></input> Rollen Dünndraht <button id="Pruef86" onclick="Aufgabe86()">Prüfen</button></p></pre>  
+
+                      <script>
+                        function Aufgabe86() { 
+                                                
+                          if (Eintrag86.value=="300") {alert("Richtig"); document.getElementById("Pruef86").disabled= true; 
+                          }  
+                           
+                          else if (Eintrag86.value!=="300" && Eintrag86.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt.");            
+                          document.getElementById("Pruef86").disabled= true; document.getElementById("Eintrag86").value="300"; window.open('Ungleich_Aufgabe86.html');}
+                               
+                          else if (Eintrag86.value=="") {alert("Bitte eine Eingabe machen")}}
+
+                         
+                          </script>
+                          
+<!--//Aufgabe 87-->                          
+                          
+<pre><p class="Aufgabe"><strong>Aufgabe 87
+
+Ein Landwirt will für eine Düngung die Dünger-
+sorten A und B mischen. Von A bekommt er von 
+einem Händler maximal 150 kg, von B 225 kg. 
+Die erste Mischung soll aus 20% der Sorte A, 
+die zweite aus 40% der Sorte B bestehen. 
+Beim Kauf gibt es für die Sorte A einen 
+Preisnachlass von 0,30 € pro kg, für B einen 
+von 0,40 €. 
+Bei welcher Einkaufsmenge von A und B erzielt 
+er den höchsten Preisnachlass N? </strong>
+
+<button  onclick="window.open('Ungleich_Aufgabe87.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 88-->
+
+<pre><p class ="Aufgabe" ><strong>Aufgabe 88
+
+Für welche natürlichen Zahlen x und y ist der 
+Ausdruck A = 7x + 5y + 3 am größten, wenn 
+x + y maximal = 10 und y mindestens um 2 
+größer ist als x?   </strong>
+
+y = <input type="text" id="Eintrag88" maxlength="1" size="1" style= background-color:yellow ></input> <button id="Pruef88" onclick="Aufgabe88()">Prüfen</button>  </p></pre>  
+
+                      <script>
+                        function Aufgabe88() { 
+                                                
+                          if (Eintrag88.value=="6") {alert("Richtig"); document.getElementById("Pruef88").disabled= true; 
+                          }  
+                           
+                          else if (Eintrag88.value!=="6" && Eintrag88.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt.");            
+                          document.getElementById("Pruef88").disabled= true; document.getElementById("Eintrag88").value="6"; window.open('Ungleich_Aufgabe88.html');}
+                               
+                          else if (Eintrag88.value=="") {alert("Bitte eine Eingabe machen")}}
+                      
+                          
+                          </script>
+                          
+<!--//Aufgabe 89-->                          
+                          
+<pre><p class="Aufgabe"><strong>Aufgabe 89
+
+Eine Fabrik verkauft das Bauteil A für 10 000 €, 
+das Bauteil B für 10 000 €. Pro Tag können entweder 
+15 Bauteile A oder 30 Bauteile B hergestellt werden.
+Wieviele Bauteile A oder B wird sie in 240 Tagen 
+herstellen, wenn möglichst hohe Gesamteinnahmen 
+erzielt werden sollen, und sie maximal 6 000 
+Bauteile absetzen kann?</strong>  
+
+<button  onclick="window.open('Ungleich_Aufgabe89.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 90-->
+
+<pre><p class ="Aufgabe" ><strong>Aufgabe 90
+
+Ein Unternehmer stellt Zusatzbauteile für 
+Computer her. Für Bauteil A braucht er in 
+der Herstellung 10 Minuten, für Bauteil B 
+20 Minuten bei einer maximalen Arbeitszeit 
+von 6 h. 
+Für die Materialkosten, Bauteil A 3 €, 
+Bauteil B 2 €, stehen ihm 50 €/Tag zur 
+Verfügung. Bietet er Bauteil A für 9 €, 
+Bauteil B für 7 € an, kann er insgesamt 
+20 Bauteile/Tag verkaufen.
+a) Wieviele Bauteile A und B muss er täglich 
+herstellen, wenn er möglichst hohe Einnahmen 
+haben will?
+b) Wie hoch ist sein maximaler Gewinn G?
+c) Wie viele Bauteile A und B muss er täglich 
+herstellen, wenn er bei möglichst kurzer 
+Arbeitszeit mindestens 150 € einnehmen will? 
+d) Wie lange ist seine Arbeitszeit?            </strong>  
+
+d) <input type="text" id="Eintrag90" maxlength="3" size="1" style= background-color:yellow ></input> Minuten <button id="Pruef90" onclick="Aufgabe90()">Prüfen</button>   </p></pre>  
+
+                      <script>
+                        function Aufgabe90() { 
+                                                
+                          if (Eintrag90.value=="350") {alert("Richtig"); document.getElementById("Pruef90").disabled= true; 
+                          }  
+                           
+                          else if (Eintrag90.value!=="350" && Eintrag90.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt.");            
+                          document.getElementById("Pruef90").disabled= true; document.getElementById("Eintrag90").value="350"; window.open('Ungleich_Aufgabe90.html');}
+                               
+                          else if (Eintrag90.value=="") {alert("Bitte eine Eingabe machen")}}
+
+                          </script> 
+                          
+<!--//Aufgabe 91-->                          
+                          
+<pre><p class="Aufgabe"><strong>Aufgabe 91
+
+Für die Geräte A und B werden auf 3 Automaten 
+C, D und E Bauteile gefertigt. In der Matrix ist der 
+Zeitaufwand für die Geräte pro Automat dargestellt.
+Automat     Zeitaufwand in Minuten 
+                A            B  
+     C         4,5           3
+     D         4             4 
+     E         1,5           6
+Die Automaten haben eine maximale Nutzzeit 
+von 6 Stunden. Wieviel Geräte sollten hergestellt 
+werden, wenn der Gewinn pro Gerät A 3 € und der 
+von B 4 € beträgt und der Gesamtgewinn G maximal 
+sein soll?</strong>  
+
+<button  onclick="window.open('Ungleich_Aufgabe91.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 92-->
+
+<pre><p class ="Aufgabe" ><strong>Aufgabe 92
+
+Ein Mensch braucht wöchentlich mindestens 
+70 mg Vitamin H und 150 mg Vitamin B. Es gibt 
+Tabletten der Sorte A mit 10 mg H und 30 mg B 
+pro Gramm und die Sorte B mit 20 mg H und 
+10 mg B pro Gramm. Die Sorte A kostet 0,50 € 
+pro g und die Sorte B 0,40 € pro g. 
+Wieviel g von jeder Sorte muss er in einer 
+Woche einnehmen, um zu möglichst geringen 
+Kosten K seinen Bedarf zu decken?</strong>  
+
+Es sind <input type="text" id="Eintrag92" maxlength="3" size="1" style= background-color:yellow ></input> g der Sorte A. <button id="Pruef92" onclick="Aufgabe92()">Prüfen</button> </p></pre>  
+
+                      <script>
+                        function Aufgabe92() { 
+                                                
+                          if (Eintrag92.value=="4,6") {alert("Richtig"); document.getElementById("Pruef92").disabled= true; 
+                          }  
+                           
+                          else if (Eintrag92.value!=="4,6" && Eintrag92.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt.");            
+                          document.getElementById("Pruef92").disabled= true; document.getElementById("Eintrag92").value="4,6"; window.open('Ungleich_Aufgabe92.html');}
+                               
+                          else if (Eintrag92.value=="") {alert("Bitte eine Eingabe machen")}}
+
+                          </script> 
+                          
+<!--//Aufgabe 93-->                          
+                          
+<pre><p class="Aufgabe"><strong>Aufgabe 93
+
+Zur Herstellung einer Legierung braucht man 
+die Metalle S, T und U in einer vorgegebenen 
+Mindestmenge M. Sie befinden sich als 
+Bestandteile in den Erzen E und F. 
+Die Verteilung zeigt die Matrix:
+            E        F         M
+S in t     0,1       0        0,3
+T in t     0,1       0,1      1
+U in t     0,1       0,2      1,4
+Erz E kostet 20 € pro Tonne, Erz F 15 €. 
+Wieviel t E und F braucht man, wenn die 
+Kosten K minimal sein sollen?    </strong> 
+
+<button  onclick="window.open('Ungleich_Aufgabe93.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 94-->
+
+<pre><p class ="Aufgabe" ><strong>Aufgabe 94
+
+2 Bauteile A und B werden an 3 Werkzeug-
+maschinen bei der Herstellung bearbeitet. 
+In der Matrix sind die Bearbeitungszeiten 
+pro Bauteil in Minuten dargestellt.
+                A       B
+Maschine 1      3       6
+Maschine 2      6       4
+Maschine 3      6       0
+Maschine 1 und 2 stehen täglich höchstens 
+6 Stunden, Maschine 3 5 Stunden zur Verfügung. 
+Bauteil A kann mit einem Gewinn von 10 €, 
+Bauteil B zu einem von 12 € verkauft werden. 
+Wieviele Bauteile A und B muss man täglich 
+herstellen, um einen maximalen Gewinn G zu 
+erzielen?           </strong>  
+
+<input type="text" id="Eintrag94" maxlength="2" size="1" style= background-color:yellow ></input> Bauteile B <button id="Pruef94" onclick="Aufgabe94()">Prüfen</button> </p></pre>  
+
+                      <script>
+                        function Aufgabe94() { 
+                                                
+                          if (Eintrag94.value=="45") {alert("Richtig"); document.getElementById("Pruef94").disabled= true; 
+                          }  
+                           
+                          else if (Eintrag94.value!=="45" && Eintrag94.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt.");            
+                          document.getElementById("Pruef94").disabled= true; document.getElementById("Eintrag94").value="45"; window.open('Ungleich_Aufgabe94.html');}
+                               
+                          else if (Eintrag94.value=="") {alert("Bitte eine Eingabe machen")}}
+
+                          </script> 
+
+<!--//Aufgabe 95-->
+
+<pre><p class="Aufgabe"><strong>Aufgabe 95
+
+2 Bauteile A und B werden an 2 Maschinen 
+bearbeitet und auf 2 Bahnen zusammengesetzt. 
+Pro Tag können auf der Maschine 1 höchstens 
+15 Bauteile A oder 12 Bauteile B oder eine 
+Kombination aus beiden bearbeitet werden, 
+auf der Maschine 2 höchstens 9 Bauteile A 
+oder 18 Bauteile B oder eine Kombination 
+aus beiden. 
+Auf der Bahn1 können höchstens 7 auf Bahn 2 
+höchstens 20 Bauteile pro Tag zusammengesetzt 
+werden. Wieviel Bauteile A und B sind pro Tag 
+herzustellen, wenn das Bauteil A einen Gewinn 
+von 40 €, Bauteil B einen von 25 € erzielt und 
+der Gewinn G maximal sein soll?</strong> 
+
+<button  onclick="window.open('Ungleich_Aufgabe95.html');" >Lösung</button></p></pre>
+
+	      <button type="button" class ="Aufgabe" onclick="window.open('index.html'); window.close('Ungleich5.html');">zurück...</button>                
+                    
+        <script>
+            document.body.addEventListener("input", function(inputEvent) {
+              const eingabeFeld = inputEvent.target;
+              if (eingabeFeld.maxLength > 0 && eingabeFeld.value.length > eingabeFeld.maxLength) {
+                eingabeFeld.value = eingabeFeld.value.substr(0, eingabeFeld.maxLength);
+              }
+            })
+          </script>

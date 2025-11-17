@@ -1,0 +1,113 @@
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ungleichungen</title>
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 1em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+    
+<pre><p class ="Aufgabe">Aufgabe 49
+
+Bestimmen Sie die Lösungsmenge der
+Ungleichung für x ∈ ℝ: 
+
+18x² - 119x - 356 ≥ 1672 - 6x² 
+ 
+18x² - 119x - 356 ≥ 1672 - 6x² |+6x² - 1672 
+ 
+24x² - 119x - 2028 ≥ 0 |:24 
+ 
+      119  
+x² - -----x - 84,5 ≥ 0 
+       24 
+ 
+      119       119        119 
+x² - -----x + (-----)² - (-----)² - 84,5 ≥ 0 
+       24        48         48 
+ 
+      119      14161      14161     194688 
+x² - -----x + -------- - ------- - -------- ≥ 0 
+       24       2304       2304      2304   
+ 
+      119       208849          208849 
+(x - -----)² - -------- ≥ 0 |+ -------- 
+       48        2304            2304 
+ 
+      119        208849 
+(x - -----)² ≥ ---------- |ⱱ 
+       48         2304 
+ 
+      119      457   
+|x - -----| ≥ ----- 
+       48       48   
+ 
+Fallunterscheidung: 
+ 
+1. Fall 
+ 
+      119          119           119               119  
+|x - -----| = x - ----- für x - ----- ≥ 0 --> x ≥ ----- 
+       48           48            48                48 
+ 
+     119     457      119 
+x - ----- ≥ ----- |+ ----- 
+      48      48       48 
+ 
+     576   
+x ≥ ----- = 12 
+      48 
+
+          119  
+L1 = x ≥ ----- ∩ x ≥ 12 = x ≥ 12 
+           48  
+ 
+2. Fall 
+ 
+      119            119            119               119  
+|x - -----| = -(x - -----) für x - ----- < 0 --> x < ----- 
+       48             48             48                48 
+ 
+       119      457      119 
+-(x - -----) ≥ ----- |+ ----- 
+        48       48       48 
+ 
+      119      457         457 
+-x + ----- ≥ ------ |+x - ----- 
+       48      48           48 
+ 
+       338       169  
+x ≤ - ----- = - ----- 
+        48        24   
+                               
+          119           169           169 
+L2 = x < ----- ∩ x ≤ - ----- = x ≤ - ----- 
+           48            24            24  
+ 
+                              169                      
+L = L1 ∪ L2 = x ≥ 12 ∪ x ≤ - ----- =   
+                               24                     
+
+                    <span style="color:red;">169</span>                            
+L = <span style="color:red;">x ≥ 12 ∪ x ≤ - -----</span>
+                     <span style="color:red;">24</span>
+
+                                  169
+In Worten: Für x ≥ 12 oder x ≤ - -----  
+                                   24
+                            
+ist <span style="color:blue;">18x² - 119x - 356</span> ≥ <span style="color:red;">1672 - 6x²</span>.
+
+<img src="Ungleich_49.jpg"> 
+
+             
+
+</p></pre>

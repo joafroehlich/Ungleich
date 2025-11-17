@@ -1,0 +1,105 @@
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ungleichungen</title>
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 1em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+    
+<pre><p class ="Aufgabe">Aufgabe 22
+
+Bestimmen Sie die Lösungsmenge der
+Ungleichung für x ∈ ℝ: 
+
+ x² + 17     x - 2        5    
+--------- ≤ -------- - -------             
+ x² - 1      x + 1      x - 1 
+ 
+     x² + 17        x - 2        5    
+---------------- ≤ -------- - -------             
+ (x - 1)(x + 1)     x + 1      x - 1 
+
+x ≠ 1; - 1, weil sonst der Nenner x - 1 = 0, 
+oder x + 1 = 0. Division durch 0 nicht 
+definiert in ℝ.
+ 
+(x - 1)(x + 1) = Hauptnenner 
+ 
+Fallunterscheidung: 
+ 
+1. Fall (x - 1)(x + 1) ist größer 0, wenn  
+ 
+(x - 1) > 0 --> x > 1 
+(x + 1) > 0 --> x > -1 
+ 
+x > 1 ∩ x > -1 = 1. Definitionsmenge für den 1. Fall D<sub>1</sub> = 1 < x < ∞   
+ 
+(x - 1) < 0 --> x < 1 
+(x + 1) < 0 --> x < -1 
+ 
+x < 1 ∩ x < - 1 = 2. Definitionsmenge für den 1. Fall D<sub>2</sub> = -∞ < x < -1 
+ 
+D<sub>1,2</sub> = D<sub>1</sub> ∪ D<sub>2</sub> = 1 < x < ∞ ∪ -∞ < x < -1  
+ 
+    x² + 17          x - 2       5    
+---------------- ≤ -------- - ------- |*(x - 1)(x + 1)            
+ (x - 1)(x + 1)      x + 1     x - 1 
+ 
+x² + 17 ≤ (x - 2)(x - 1) - 5 (x + 1) 
+ 
+x² + 17 ≤ x² - 3x + 2 - 5x - 5 |-x² 
+ 
+17 ≤ - 8x - 3 |+8x - 17 
+ 
+8x ≤ -20 |:8 
+ 
+x ≤ -2,5 
+ 
+L<sub>1</sub> = D<sub>1,2</sub> ∩ x ≤ -2,5 = 1 < x < ∞ ∪ - ∞ < x < -1 ∩ x ≤ - 2,5 = x ≤ -2,5 
+ 
+2. Fall (x - 1)(x + 1) ist kleiner 0, wenn  
+ 
+(x - 1) > 0 --> x > 1 
+
+(x + 1) < 0 --> x < -1 
+
+x > 1 ∩ x < -1 = 1. Definitionsmenge für den 2. Fall D<sub>3</sub> = ∅ 
+
+(x - 1) < 0 --> x < 1 
+
+(x + 1) > 0 --> x > -1 
+
+x < 1 ∩ x > - 1 = 2. Definitionsmenge für den 2. Fall D<sub>4</sub> = -1 < x < 1 
+
+D<sub>3,4</sub> = ∅ ∩ -1 < x < 1 = -1 < x < 1 
+
+     x² + 17        x - 2        5    
+---------------- ≤ -------- - ------- | *(x - 1)(x + 1) aus ≤ wird ≥           
+ (x - 1)(x + 1)     x + 1     x - 1 
+
+x² + 17 ≥ (x - 2)(x - 1) - 5 (x + 1) 
+
+x² + 17 ≥ x² - 3x + 2 - 5x - 5 |-x² 
+
+17 ≥ - 8x - 3 |+8x - 17 
+
+8x ≥ -20 |:8 
+
+x ≥ -2,5 
+
+L<sub>2</sub> = D<sub>3,4</sub> ∩ x ≥ -2,5 = -1 < x < 1 ∩ x ≥ -2,5 = -1 < x < 1 
+
+L = L<sub>1</sub> &cup; L<sub>2</sub>
+
+<span style="color:red;">L = x ≤ -2,5 ∪ -1 < x < 1</span>    
+
+</p></pre>

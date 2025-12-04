@@ -126,15 +126,15 @@ Ungleichung für x ∈ ℝ:
 --------- - ------- < 0  
   x + 1      x - 1 </strong> 
 
-<input type="text" id="Eintrag16" maxlength="3" size="1" style= background-color:yellow ></input> < x < 0 v 1 < x < ∞ <button id="Pruef16" onclick="Aufgabe16()">Prüfen</button>       </p></pre>
+<input type="text" id="Eintrag16" maxlength="1" size="1" style= background-color:yellow ></input> < x < 0 ∪ -1 < x < ∞ <button id="Pruef16" onclick="Aufgabe16()">Prüfen</button>       </p></pre>
  
                       <script>
                         function Aufgabe16() { 
                                                 
-                          if (Eintrag16.value=="372") {alert("Richtig"); document.getElementById("Pruef16").disabled= true;
+                          if (Eintrag16.value=="1") {alert("Richtig"); document.getElementById("Pruef16").disabled= true;
                           }  
                            
-                          else if (Eintrag16.value!=="372" && Eintrag16.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag16").value="372"; window.open('Ungleich_Aufgabe16.html');           
+                          else if (Eintrag16.value!=="1" && Eintrag16.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag16").value="1"; window.open('Ungleich_Aufgabe16.html');           
                           document.getElementById("Pruef16").disabled= true;}
                                
                           else if (Eintrag16.value=="") {alert("Bitte eine Eingabe machen")}}
@@ -158,21 +158,22 @@ Ungleichung für x ∈ ℝ:
 
   <pre><p class ="Aufgabe" ><strong>Aufgabe 18
 
-Bestimmen Sie die Lösungsmenge der Ungleichung für x ∈ ℝ:
+Bestimmen Sie die Lösungsmenge der 
+Ungleichung für x ∈ ℝ:
 
    x² - 25            x - 5 
 -------------- ≤ 1 + -------          
  x² + 2x - 15         3 - x</strong>
 
-<input type="text" id="Eintrag18" maxlength="2" size="1" style= background-color:yellow ></input> ≤ x < 3 <button id="Pruef18" onclick="Aufgabe18()">Prüfen</button></p></pre>
+<input type="text" id="Eintrag18" maxlength="1" size="1" style= background-color:yellow ></input> < x ≤ 7 <button id="Pruef18" onclick="Aufgabe18()">Prüfen</button></p></pre>
  
                       <script>
                         function Aufgabe18() { 
                                                 
-                          if (Eintrag18.value=="-3") {alert("Richtig"); document.getElementById("Pruef18").disabled= true;
+                          if (Eintrag18.value=="3") {alert("Richtig"); document.getElementById("Pruef18").disabled= true;
                           }  
                            
-                          else if (Eintrag18.value!=="-3" && Eintrag18.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag18").value="-3"; window.open('Ungleich_Aufgabe18.html');           
+                          else if (Eintrag18.value!=="3" && Eintrag18.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag18").value="3"; window.open('Ungleich_Aufgabe18.html');           
                           document.getElementById("Pruef18").disabled= true;}
                                
                           else if (Eintrag18.value=="") {alert("Bitte eine Eingabe machen")}}

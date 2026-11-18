@@ -7,18 +7,76 @@
   <meta name ="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ungleichungen</title>
   
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>  
+  
 </head>
 <body style="background-color: white;">
 
     <style> 
-        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em; }
+         
+        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em;}
         .Text2 { font-size: 1em; font-family: Verdana,Sans-serif;margin-top:1em;margin-left:0.5em;}
-        .Text3 { font-size: 0.8em;background-color: white; font-family: Verdana,Sans-serif;margin:0.5em; }
+        .Text3 { font-size: 0.6em; font-family: monospace,monospace;margin:0.5em; }
         
-        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;}
-        button { font-family: Verdana, Sans-serif; }
+        body { margin: 0; font-family: Verdana,Sans-serif; font-size: 1.05rem; line-height: 1.2; background: #fff; }  
+       main { max-width: 40rem; margin: 0 auto; padding: 1rem; }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1rem; margin: 1.4rem 0 0.3rem; }
+.check input { font-size: 1.05rem; padding: 0.2rem; width: 4rem; }
+.check button { font-size: 1.05rem; padding: 0.2rem 0.6rem; } 
+.br-mobil {
+            display: none;}
+.br-desk {
+            display: block;}
+.desktop-break {
+            display: block;
+                 content: "";   
+                 height: 0.8em;  }
+.desktop-plus {
+            display: inline-block;}
+.mobile-break {
+            display: none; }            
+.mobile-plus {
+            display: none;}  
+
+@media screen and (max-width: 576px) {
+
+            .br-mobil {
+                display: block;}
+
+            .br-desk {
+                display: none;} 
+
+            .desktop-break {
+                display: none; }    
+                
+            .desktop-plus {
+                display: none; }
+
+            .mobile-break {
+                 display: block;
+                 content: "";   
+                 height: 0.8em;  }                
+                          
+            .mobile-plus {
+                 display: inline-block; }
+                           
+                }
+
         input {background-color:yellow; }
+
+        img {
+               max-width: 100%;
+               height: auto;
+               display: block;
+            }    
+        
     </style>
+
+    <main>
+
 
 <p class="Text1">Wie löse ich Matheaufgaben?</p>
 <p class="Text1">Ungleichungen</p>  
@@ -26,23 +84,24 @@
 <p class="Text2"><span style= "background-color:white;">Sie sehen ein gelbes Eingabefeld und die <br>Schalter: Prüfen und Lösung.</span></p>
 <p class="Text2"><span style= "background-color:white;">Tragen Sie Ihr Ergebnis ein, prüfen Sie es <br> oder starten Sie eine Lösung.</span></p>
 
+<div class="check">
+
 <!--//Aufgabe 62-->
 
-  <pre><b><p class ="Aufgabe" >Aufgabe 62
+  <h2>Aufgabe 62</h2><p>
 
-Zeichnen Sie die Graphen der Ungleichungen:
+Zeichnen Sie die Graphen der Ungleichungen:</p>
 
-a) 3x + 4y ≤ 12
+a) 3x + 4y ≤ 12</p>
 
-b) 7x - 3y > 21
+b) 7x - 3y > 21</p>
 
-c) 2(2,5x - 4) > 5y - 1     
+c) 2(2,5x - 4) > 5y - 1</p>     
 
 In der Lösungsmenge welcher Aufgabe liegt der 
-Punkt (-3|-15)?
+Punkt (-3|-15)?</p>
 
-In <button id ="a" onclick="Schalter1('a')">a</button>, <button id ="b" onclick="Schalter1('b')" >b</button> oder <button id ="c" onclick="Schalter1('c')" >c</button>?
-</p></pre>
+In <button id ="a" onclick="Schalter1('a')">a</button>, <button id ="b" onclick="Schalter1('b')" >b</button> oder <button id ="c" onclick="Schalter1('c')" >c</button>?</p>
 
                       <script>
                     function Schalter1(buttonId){
@@ -61,31 +120,31 @@ In <button id ="a" onclick="Schalter1('a')">a</button>, <button id ="b" onclick=
                       
 <!--//Aufgabe 63-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 63
+    <h2>Aufgabe 63</h2><p>
 
-Zeichnen Sie die Graphen der Ungleichungen:
+Zeichnen Sie die Graphen der Ungleichungen:</p>
 
-a) y ≥ 0,5x + 1
+a) y ≥ 0,5x + 1</p>
 
-b) y ≤ - 2x + 5    
+b) y ≤ - 2x + 5</p>    
 
-<button  onclick="window.open('Ungleich_Aufgabe63.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Ungleich_Aufgabe63.html');" >Lösung</button></p>
 
 <!--//Aufgabe 64-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 64
+  <h2>Aufgabe 64</h2><p>
 
-Wie lautet die lineare Ungleichung 
+Wie lautet die lineare Ungleichung</p> 
 
-a) ausschließlich der Randgerade?
+a) ausschließlich der Randgerade?</p>
 
-<img src="Ungleich_64a.jpg">
+<img src="Ungleich_64a.jpg"></p>
 
-y > <input type="text" id="Eintrag64" maxlength="2" size="1" style= background-color:yellow ></input> x - 1 <button id="Pruef64" onclick="Aufgabe64()">Prüfen</button>
+y > <input type="text" id="Eintrag64" maxlength="2"  ></input> x - 1 <button id="Pruef64" onclick="Aufgabe64()">Prüfen</button></p>
 
-b) einschließlich der Randgerade? 
+b) einschließlich der Randgerade?</p> 
 
-<img src="Ungleich_64b.jpg"></p></pre> 
+<img src="Ungleich_64b.jpg"></p>
     
  
                       <script>
@@ -103,7 +162,7 @@ b) einschließlich der Randgerade?
                       
 <!--//Aufgabe 65-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 65
+    <h2>Aufgabe 65</h2><p>
 
 Ein Zweiradgeschäft kauft Fahrräder und Mopeds 
 unter folgenden Bedingungen auf Vorrat. Das Lager 
@@ -112,22 +171,22 @@ Fahrräder und 3 Mopeds sein.
 Ein Fahrrad kostet 200 €, ein Moped 800 €.
 Es stehen 9 000 € zur Verfügung.
 Stellen Sie ein Ungleichungssystem auf, und
-zeichnen Sie das Planungsgebiet. 
+zeichnen Sie das Planungsgebiet.</p> 
 
-<button  onclick="window.open('Ungleich_Aufgabe65.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Ungleich_Aufgabe65.html');" >Lösung</button></p>
 
 <!--//Aufgabe 66-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 66
+  <h2>Aufgabe 66</h2><p>
 
 Für eine Feier mit 26 Personen stehen für 
 Getränke 25 € zur Verfügung. 
 Eine Dose Orangensaft kostet 0,75 €, eine Dose 
 Limonade 0.85 €. Die Anzahl der Dosen soll 
 größer als die der Teilnehmer sein.        
-Ist diese Kombination möglich?  O 20 L 10
+Ist diese Kombination möglich?  O 20 L 10</p>
 
-<button id ="ja" onclick="Schalter2('ja')">ja</button> <button id ="nein" onclick="Schalter2('nein')" >nein</button> </p></pre>
+<button id ="ja" onclick="Schalter2('ja')">ja</button> <button id ="nein" onclick="Schalter2('nein')" >nein</button> </p>
 
                       <script>
                     function Schalter2(buttonId){
@@ -143,28 +202,27 @@ Ist diese Kombination möglich?  O 20 L 10
                       
 <!--//Aufgabe 67-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 67
+    <h2>Aufgabe 67</h2><p>
 
 Für den Abtransport von 31 t Bauschutt stehen 
 2 Lkws zur Verfügung. Der eine kann 3 t, der 
 andere 8 t laden. Geben Sie 3 Möglichkeiten für 
 den Lkw Einsatz an, wenn höchstens 10 Fahrten 
-vorgeschrieben sind.  
+vorgeschrieben sind.</p>  
 
-<button  onclick="window.open('Ungleich_Aufgabe67.html');" >Lösung</button></p></pre> 
+<button  onclick="window.open('Ungleich_Aufgabe67.html');" >Lösung</button></p> 
 
 <!--//Aufgabe 68-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 68
+  <h2>Aufgabe 68</h2><p>
 
 Eine Autofabrik stellt höchstens 400 Fahrzeuge  
 pro Tag her, davon mindestens 200 Pkw und 40 
 Kombis. Zeichnen Sie das Planungsgebiet.
 Liegt die Kombination 200 Pkw und 200 Kombis 
-im Planungsgebiet?   
+im Planungsgebiet?</p>   
 
-<button id ="ja1" onclick="Schalter3('ja1')">ja</button> <button id ="nein1" onclick="Schalter3('nein1')" >nein</button> 
-</p></pre>
+<button id ="ja1" onclick="Schalter3('ja1')">ja</button> <button id ="nein1" onclick="Schalter3('nein1')" >nein</button></p>
 
                       <script>
                     function Schalter3(buttonId){
@@ -180,33 +238,32 @@ im Planungsgebiet?
                       
 <!--//Aufgabe 69-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 69
+    <h2>Aufgabe 69</h2><p>
 
 Ein Landwirt baut auf einer Fläche von maximal 
 30 ha Weizen und Kartoffeln an.
 Er will auf mindestens 10 ha Weizen und auf 5 ha  
 Kartoffeln anbauen. 
-Zeichnen Sie das Planungsgebiet.  
+Zeichnen Sie das Planungsgebiet.</p>  
 
-<button  onclick="window.open('Ungleich_Aufgabe69.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Ungleich_Aufgabe69.html');" >Lösung</button></p>
 
 <!--//Aufgabe 70-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 70
+ <h2>Aufgabe 70</h2><p>
 
 Eine Getränkefirma kann höchstens 2 000 Flaschen 
 pro Tag abfüllen. Vom Getränk A können 1 200
 Flaschen, vom Getränk B 1 600 Flaschen abgefüllt 
 werden. 
-Welche Kombination (A|B) ist nicht möglich?
+Welche Kombination (A|B) ist nicht möglich?</p>
 
-a) (1 000|600), 
-b) (400|1 600), 
-c) (800| 1 200), 
-d) (1 400|1 400) 
+a) (1 000|600),</p> 
+b) (400|1 600),</p> 
+c) (800| 1 200),</p> 
+d) (1 400|1 400)</p> 
 
-<button id ="a1" onclick="Schalter4('a1')">a</button> <button id ="b1" onclick="Schalter4('b1')" >b</button> <button id ="c1" onclick="Schalter4('c1')" >c</button> <button id ="d" onclick="Schalter4('d')" >d</button>
-</p></pre>
+<button id ="a1" onclick="Schalter4('a1')">a</button> <button id ="b1" onclick="Schalter4('b1')" >b</button> <button id ="c1" onclick="Schalter4('c1')" >c</button> <button id ="d" onclick="Schalter4('d')" >d</button></p>
 
                       <script>
                     function Schalter4(buttonId){
@@ -225,31 +282,31 @@ d) (1 400|1 400)
                       
 <!--//Aufgabe 71-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 71
+    <h2>Aufgabe 71</h2><p>
 
 An Drehbank 1 und Drehbank 2 werden Werkstücke 
 W und U bearbeitet. 
 Drehbank 1 braucht für W 2,5 hfür U 4,75 h. 
 Drehbank 2 braucht für W 3 h für U 4,5 h.
 Wie viel W und U können in 24 h hergestellt 
-werden?    
+werden?</p>    
 
-<button  onclick="window.open('Ungleich_Aufgabe71.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Ungleich_Aufgabe71.html');" >Lösung</button></p>
 
 <!--//Aufgabe 72-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 72
+  <h2>Aufgabe 72</h2><p>
 
 Für die Herstellung von 2 Modellen K<sub>1</sub> und K<sub>2</sub> auf 
 den Bearbeitungsmaschinen M<sub>1</sub>, M<sub>2</sub> und M<sub>3</sub> ist der 
-Zeitbedarf in h in der Matrix dargestellt:
+Zeitbedarf in h in der Matrix dargestellt:</p><pre>
       M<sub>1</sub>       M<sub>2</sub>      M<sub>3</sub>
 K<sub>1</sub>    1       2/3      1 
-K<sub>2</sub>    1       4/3     2/3
+K<sub>2</sub>    1       4/3     2/3</pre>
 Wie viele K<sub>1</sub> und K<sub>2</sub> können auf M<sub>1</sub> und M<sub>2</sub> in 8 h 
-hergestellt werden?    
+hergestellt werden?</p>    
 
-Es sind <input type="text" id="Eintrag72" maxlength="1" size="1" style= background-color:yellow ></input> K<sub>1</sub> und 8 K<sub>2</sub>. <button id="Pruef72" onclick="Aufgabe72()">Prüfen</button></p></pre> 
+Es sind <input type="text" id="Eintrag72" maxlength="1"  ></input> K<sub>1</sub> und 8 K<sub>2</sub>. <button id="Pruef72" onclick="Aufgabe72()">Prüfen</button></p>
     
  
                       <script>
@@ -267,20 +324,20 @@ Es sind <input type="text" id="Eintrag72" maxlength="1" size="1" style= backgrou
                       
 <!--//Aufgabe 73-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 73
+    <h2>Aufgabe 73</h2><p>
 
 Zu einem Lehrbuch für 16 € gibt es eine CD mit 
 Aufgaben und Lösungen zu 48 €. 
 Eine Buchhandlung will mindestens 15 CDs und 
 25 Lehrbücher einkaufen, aber nicht mahr als 
 2 400 € ausgeben. 
-Zeichnen Sie das Planungsgebiet.     
+Zeichnen Sie das Planungsgebiet.</p>     
 
-<button  onclick="window.open('Ungleich_Aufgabe73.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Ungleich_Aufgabe73.html');" >Lösung</button></p>
 
 <!--//Aufgabe 74-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 74
+  <h2>Aufgabe 74</h2><p>
 
 Für Gardinen gibt es Stoffballen erster und 
 zweiter Qualität. Der von erster Qualität liefert 
@@ -289,10 +346,9 @@ von Ballen erster Qualität braucht man 18 h, für
 die anderen 27 h. In 360 Stunden sollen nicht 
 mehr als 350 m verarbeitet werden. Sind 5 
 Ballen erster Qualität und 10 zweiter in dieser 
-Zeit zu schaffen? 
+Zeit zu schaffen?</p> 
 
-<button id ="ja2" onclick="Schalter5('ja2')">ja</button> <button id ="nein2" onclick="Schalter5('nein2')" >nein</button> 
-</p></pre>
+<button id ="ja2" onclick="Schalter5('ja2')">ja</button> <button id ="nein2" onclick="Schalter5('nein2')" >nein</button></p>
 
                       <script>
                     function Schalter5(buttonId){
@@ -307,7 +363,7 @@ Zeit zu schaffen?
                       
 <!--//Aufgabe 75-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 75
+    <h2>Aufgabe 75</h2><p>
 
 Ein Einfamilienhaus kostet bei einer Baufirma 
 200 000 €, ein Zweifamilienhaus 250 000 €. 
@@ -316,11 +372,11 @@ Einfamilienhaus und 1 500 m² für ein
 Zweifamilienhaus zur Verfügung. Das 
 Baugelände ist 15 000 m² groß, und für den 
 Bau der Häuser sind maximal 3 000 000 € 
-vorgesehen. Zeichnen Sie das Planungsgebiet.  
+vorgesehen. Zeichnen Sie das Planungsgebiet.</p>  
 
-<button  onclick="window.open('Ungleich_Aufgabe75.html');" >Lösung</button></p></b></pre>
+<button  onclick="window.open('Ungleich_Aufgabe75.html');" >Lösung</button></p>
 
-	      <a href= "index.html" ><p class="Text2" > <span style= >zurück</span></p></a>               
+	      <a href= "index.html" ><p class="Text2" > <span style= >zurück</span></p></a></div></main>               
                     
         <script>
             document.body.addEventListener("input", function(inputEvent) {

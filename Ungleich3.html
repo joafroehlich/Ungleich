@@ -7,18 +7,75 @@
   <meta name ="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ungleichungen</title>
   
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>  
+  
 </head>
 <body style="background-color: white;">
 
     <style> 
-        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em; }
+         
+        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em;}
         .Text2 { font-size: 1em; font-family: Verdana,Sans-serif;margin-top:1em;margin-left:0.5em;}
-        .Text3 { font-size: 0.8em;background-color: white; font-family: Verdana,Sans-serif;margin:0.5em; }
+        .Text3 { font-size: 0.6em; font-family: monospace,monospace;margin:0.5em; }
         
-        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;}
-        button { font-family: Verdana, Sans-serif; }
+        body { margin: 0; font-family: Verdana,Sans-serif; font-size: 1.05rem; line-height: 1.2; background: #fff; }  
+       main { max-width: 40rem; margin: 0 auto; padding: 1rem; }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1rem; margin: 1.4rem 0 0.3rem; }
+.check input { font-size: 1.05rem; padding: 0.2rem; width: 4rem; }
+.check button { font-size: 1.05rem; padding: 0.2rem 0.6rem; } 
+.br-mobil {
+            display: none;}
+.br-desk {
+            display: block;}
+.desktop-break {
+            display: block;
+                 content: "";   
+                 height: 0.8em;  }
+.desktop-plus {
+            display: inline-block;}
+.mobile-break {
+            display: none; }            
+.mobile-plus {
+            display: none;}  
+
+@media screen and (max-width: 576px) {
+
+            .br-mobil {
+                display: block;}
+
+            .br-desk {
+                display: none;} 
+
+            .desktop-break {
+                display: none; }    
+                
+            .desktop-plus {
+                display: none; }
+
+            .mobile-break {
+                 display: block;
+                 content: "";   
+                 height: 0.8em;  }                
+                          
+            .mobile-plus {
+                 display: inline-block; }
+                           
+                }
+
         input {background-color:yellow; }
+
+        img {
+               max-width: 100%;
+               height: auto;
+               display: block;
+            }    
+        
     </style>
+
+    <main>
 
 <p class="Text1">Wie löse ich Matheaufgaben?</p>
 <p class="Text1">Ungleichungen</p> 
@@ -26,29 +83,31 @@
 <p class="Text2"><span style= "background-color:white;">Sie sehen ein gelbes Eingabefeld und die <br>Schalter: Prüfen und Lösung.</span></p>
 <p class="Text2"><span style= "background-color:white;">Tragen Sie Ihr Ergebnis ein, prüfen Sie es <br> oder starten Sie eine Lösung.</span></p>
 
-   <!--//Aufgabe 25--> 
-                      
-    <pre><b><p class="Aufgabe">Aufgabe 25
+   <div class="check">
+
+<!--//Aufgabe 25-->
+
+  <h2>Aufgabe 25</h2><p>
 
 Bestimmen Sie die Lösungsmengen der Ungleichungen 
-für x ∈ ℝ:
+für x ∈ ℝ:</p>
 
-a) |x| > -2
-b) |x - 4| > 2
-c) |5 + x| < 3  
+a) |x| > -2</p>
+b) |x - 4| > 2</p>
+c) |5 + x| < 3</p>  
 
-<button  onclick="window.open('Ungleich_Aufgabe25.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Ungleich_Aufgabe25.html');" >Lösung</button></p>
 
 <!--//Aufgabe 26-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 26
+  <h2>Aufgabe 26</h2><p>
 
 Bestimmen Sie die Lösungsmenge der Ungleichung 
-für x ∈ ℝ:
+für x ∈ ℝ:</p>
 
-|x| + 2x < 1  
+|x| + 2x < 1</p>  
 
-x < 1/ <input type="text" id="Eintrag26" maxlength="1" size="1" style= background-color:yellow ></input> <button id="Pruef26" onclick="Aufgabe26()">Prüfen</button></p></pre>
+x < 1/ <input type="text" id="Eintrag26" maxlength="1"  ></input> <button id="Pruef26" onclick="Aufgabe26()">Prüfen</button></p>
  
                       <script>
                         function Aufgabe26() { 
@@ -65,25 +124,25 @@ x < 1/ <input type="text" id="Eintrag26" maxlength="1" size="1" style= backgroun
                       
      <!--//Aufgabe 27--> 
                       
-    <pre><p class="Aufgabe">Aufgabe 27
+    <h2>Aufgabe 27</h2><p>
 
 Bestimmen Sie die Lösungsmenge der Ungleichung 
-für x ∈ ℝ:
+für x ∈ ℝ:</p>
 
-3 * |2x - 7| - 5x ≤ 8 + x  
+3 * |2x - 7| - 5x ≤ 8 + x</p>  
 
-<button  onclick="window.open('Ungleich_Aufgabe27.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Ungleich_Aufgabe27.html');" >Lösung</button></p>
 
 <!--//Aufgabe 28-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 28
+  <h2>Aufgabe 28</h2><p>
 
 Bestimmen Sie die Lösungsmenge der Ungleichung 
-für x ∈ ℝ:
+für x ∈ ℝ:</p>
 
- |2x - 1| ≥ |x - 1|      
+ |2x - 1| ≥ |x - 1|</p>      
 
-x ≥ 2/3 ∪ x ≤ <input type="text" id="Eintrag28" maxlength="1" size="1" style= background-color:yellow ></input> <button id="Pruef28" onclick="Aufgabe28()">Prüfen</button></p></pre>
+x ≥ 2/3 ∪ x ≤ <input type="text" id="Eintrag28" maxlength="1"  ></input> <button id="Pruef28" onclick="Aufgabe28()">Prüfen</button></p>
  
                       <script>
                         function Aufgabe28() { 
@@ -100,27 +159,25 @@ x ≥ 2/3 ∪ x ≤ <input type="text" id="Eintrag28" maxlength="1" size="1" sty
                       
        <!--//Aufgabe 29--> 
                       
-    <pre><p class="Aufgabe">Aufgabe 29
+    <h2>Aufgabe 29</h2><p>
 
 Bestimmen Sie die Lösungsmenge der Ungleichung 
-für x ∈ ℝ:
+für x ∈ ℝ:</p>
 
-  3      3
-|---x + ---| ≥ |x - 2|
-  2      4 
+<math mathsize="1em"><mfenced open="|" close="|"><mrow><mtable><mtr><mtd><mfrac><mn>3</mn><mn>2</mn></mfrac></mtd></mtr></mtable><mi mathvariant="normal">x</mi><mo>+</mo><mfrac><mn>3</mn><mn>4</mn></mfrac></mrow></mfenced><mo>&#x2265;</mo><mfenced open="|" close="|"><mtable><mtr><mtd><mi mathvariant="normal">x</mi><mo>&#x2212;</mo><mn>2</mn></mtd></mtr></mtable></mfenced></math></p>
 
-<button  onclick="window.open('Ungleich_Aufgabe29.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Ungleich_Aufgabe29.html');" >Lösung</button></p>
 
 <!--//Aufgabe 30-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 30
+  <h2>Aufgabe 30</h2><p>
 
 Bestimmen Sie die Lösungsmenge der Ungleichung 
-für x ∈ ℝ:
+für x ∈ ℝ:</p>
 
-|x + 2| - x ≥ 3  
+|x + 2| - x ≥ 3</p>  
 
-x ≤ <input type="text" id="Eintrag30" maxlength="4" size="1" style= background-color:yellow ></input> <button id="Pruef30" onclick="Aufgabe30()">Prüfen</button></p></pre>
+x ≤ <input type="text" id="Eintrag30" maxlength="4"  ></input> <button id="Pruef30" onclick="Aufgabe30()">Prüfen</button></p>
  
                       <script>
                         function Aufgabe30() { 
@@ -137,25 +194,25 @@ x ≤ <input type="text" id="Eintrag30" maxlength="4" size="1" style= background
                       
        <!--//Aufgabe 31--> 
                       
-    <pre><p class="Aufgabe">Aufgabe 31
+    <h2>Aufgabe 31</h2><p>
 
 Bestimmen Sie die Lösungsmenge der Ungleichung 
-für x ∈ ℝ:
+für x ∈ ℝ:</p>
 
-|3 - 2x| + 1 ≤ x     
+|3 - 2x| + 1 ≤ x</p>     
 
-<button  onclick="window.open('Ungleich_Aufgabe31.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Ungleich_Aufgabe31.html');" >Lösung</button></p>
 
 <!--//Aufgabe 32-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 32
+  <h2>Aufgabe 32</h2><p>
 
 Bestimmen Sie die Lösungsmenge der Ungleichung 
-für x ∈ ℝ:
+für x ∈ ℝ:</p>
 
- |2x + 1| ≤ |3x - 2|      
+ |2x + 1| ≤ |3x - 2|</p>      
 
-x ≥ 3 ∪ x ≤ <input type="text" id="Eintrag32" maxlength="3" size="1" style= background-color:yellow ></input> <button id="Pruef32" onclick="Aufgabe32()">Prüfen</button></p></pre>
+x ≥ 3 ∪ x ≤ <input type="text" id="Eintrag32" maxlength="3"  ></input> <button id="Pruef32" onclick="Aufgabe32()">Prüfen</button></p>
  
                       <script>
                         function Aufgabe32() { 
@@ -172,27 +229,25 @@ x ≥ 3 ∪ x ≤ <input type="text" id="Eintrag32" maxlength="3" size="1" style
                       
        <!--//Aufgabe 33--> 
                       
-    <pre><p class="Aufgabe">Aufgabe 33
+    <h2>Aufgabe 33</h2><p>
 
 Bestimmen Sie die Lösungsmenge der Ungleichung 
-für x ∈ ℝ:
+für x ∈ ℝ:</p>
 
- |3 - x| < |x + 2|   
+ |3 - x| < |x + 2|</p>   
 
-<button  onclick="window.open('Ungleich_Aufgabe33.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Ungleich_Aufgabe33.html');" >Lösung</button></p>
 
 <!--//Aufgabe 34-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 34
+  <h2>Aufgabe 34</h2><p>
 
 Bestimmen Sie die Lösungsmenge der Ungleichung 
-für x ∈ ℝ:
+für x ∈ ℝ:</p>
 
-     1            1
----------- ≤ ----------                
- |2x + 4|     |3x - 6|     
+<math mathsize="1em"><mfrac><mn>1</mn><mfenced open="|" close="|"><mtable><mtr><mtd><mn>2</mn><mi mathvariant="normal">x</mi><mo>+</mo><mn>4</mn></mtd></mtr></mtable></mfenced></mfrac><mo>&#x2264;</mo><mfrac><mn>1</mn><mfenced open="|" close="|"><mtable><mtr><mtd><mn>3</mn><mi mathvariant="normal">x</mi><mo>&#x2212;</mo><mn>6</mn></mtd></mtr></mtable></mfenced></mfrac></math></p>
 
-<input type="text" id="Eintrag34" maxlength="3" size="1" style= background-color:yellow ></input> ≤ x ≤ 10 <button id="Pruef34" onclick="Aufgabe34()">Prüfen</button></p></b></pre>
+<input type="text" id="Eintrag34" maxlength="3"  ></input> ≤ x ≤ 10 <button id="Pruef34" onclick="Aufgabe34()">Prüfen</button></p>
  
                       <script>
                         function Aufgabe34() { 
@@ -207,7 +262,7 @@ für x ∈ ℝ:
                          
                       </script> 
                       
-	      <a href= "index.html" ><p class="Text2" > <span style= >zurück</span></p></a>                
+	      <a href= "index.html" ><p class="Text2" > <span style= >zurück</span></p></a></div></main>                
                     
         <script>
             document.body.addEventListener("input", function(inputEvent) {

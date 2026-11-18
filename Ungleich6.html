@@ -11,14 +11,67 @@
 <body style="background-color: white;">
 
     <style> 
-        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em; }
+         
+        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em;}
         .Text2 { font-size: 1em; font-family: Verdana,Sans-serif;margin-top:1em;margin-left:0.5em;}
-        .Text3 { font-size: 0.8em;background-color: white; font-family: Verdana,Sans-serif;margin:0.5em; }
+        .Text3 { font-size: 0.6em; font-family: monospace,monospace;margin:0.5em; }
         
-        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;}
-        button {font-family: Verdana, Sans-serif; }
+        body { margin: 0; font-family: Verdana,Sans-serif; font-size: 1.05rem; line-height: 1.2; background: #fff; }  
+       main { max-width: 40rem; margin: 0 auto; padding: 1rem; }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1rem; margin: 1.4rem 0 0.3rem; }
+.check input { font-size: 1.05rem; padding: 0.2rem; width: 4rem; }
+.check button { font-size: 1.05rem; padding: 0.2rem 0.6rem; } 
+.br-mobil {
+            display: none;}
+.br-desk {
+            display: block;}
+.desktop-break {
+            display: block;
+                 content: "";   
+                 height: 0.8em;  }
+.desktop-plus {
+            display: inline-block;}
+.mobile-break {
+            display: none; }            
+.mobile-plus {
+            display: none;}  
+
+@media screen and (max-width: 576px) {
+
+            .br-mobil {
+                display: block;}
+
+            .br-desk {
+                display: none;} 
+
+            .desktop-break {
+                display: none; }    
+                
+            .desktop-plus {
+                display: none; }
+
+            .mobile-break {
+                 display: block;
+                 content: "";   
+                 height: 0.8em;  }                
+                          
+            .mobile-plus {
+                 display: inline-block; }
+                           
+                }
+
         input {background-color:yellow; }
+
+        img {
+               max-width: 100%;
+               height: auto;
+               display: block;
+            }    
+        
     </style>
+
+    <main>
 
 <p class="Text1">Wie löse ich Matheaufgaben?</p>
 <p class="Text1">Ungleichungen</p>  
@@ -26,9 +79,11 @@
 <p class="Text2"><span style= "background-color:white;">Sie sehen ein gelbes Eingabefeld und die <br>Schalter: Prüfen und Lösung.</span></p>
 <p class="Text2"><span style= "background-color:white;">Tragen Sie Ihr Ergebnis ein, prüfen Sie es <br> oder starten Sie eine Lösung.</span></p>
 
+<div class="check">
+
 <!--//Aufgabe 76-->
 
-  <pre><b><p class ="Aufgabe" >Aufgabe 76
+  <h2>Aufgabe 76</h2><p>
 
 Während eines Basars soll Kaffee und Tee 
 angeboten werden. Der Becher Kaffee kostet in der 
@@ -38,9 +93,9 @@ einem Verkauf von insgesamt maximal 500 Bechern
 gerechnet. Die Veranstalter gehen davon aus, dass 
 mindestens so viel Kaffee wie Tee, aber maximal 
 doppelt so viel getrunken wird. Mit welchem 
-maximalen Gewinn ist zu rechnen?      
+maximalen Gewinn ist zu rechnen? </p>     
 
-G<sub>max</sub> = <input type="text" id="Eintrag76" maxlength="3" size="1" style= background-color:yellow ></input> € <button id="Pruef76" onclick="Aufgabe76()">Prüfen</button></p></pre> 
+G<sub>max</sub> = <input type="text" id="Eintrag76" maxlength="3"  ></input> € <button id="Pruef76" onclick="Aufgabe76()">Prüfen</button></p> 
     
  
                       <script>
@@ -58,7 +113,7 @@ G<sub>max</sub> = <input type="text" id="Eintrag76" maxlength="3" size="1" style
                       
 <!--//Aufgabe 77-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 77
+    <h2>Aufgabe 77</h2><p>
 
 Die Bonbonmischung A enthält 10% Karamell, 20% 
 Drops und 10% Fruchtbonbons. Die Mischung B 
@@ -67,13 +122,13 @@ bonbons. A kostet 8 € pro kg, B 12 €/kg. Eine
 neue Mischung aus A und B soll 1 kg Karamell, 
 0,8 kg Drops und 1,8 kg Fruchtbonbons enthalten. 
 Wie viel kg von A und B sind nötig, wenn die 
-Mischung möglichst billig sein soll?  
+Mischung möglichst billig sein soll?</p>  
 
-<button  onclick="window.open('Ungleich_Aufgabe77.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Ungleich_Aufgabe77.html');" >Lösung</button></p>
 
 <!--//Aufgabe 78--> 
 
-<pre><p class ="Aufgabe" >Aufgabe 78
+<h2>Aufgabe 78</h2><p>
 
 Eine Baumschule hat für die Neuanpflanzung von 
 Kiefern und Tannen eine maximale Fäche von 
@@ -83,9 +138,9 @@ Beim Verkauf erzielt die Schule einen Gewinn von
 800 €/ha für die Tannen und einen von 900 €/ha 
 für die Kiefern. Wie hoch ist der maximale 
 Gewinn? Wie groß müssen die Anbauflächen für 
-Tannen und Kiefern sein?   
+Tannen und Kiefern sein?</p>   
 
-Kiefern  <input type="text" id="Eintrag78" maxlength="1" size="1" style= background-color:yellow ></input> ha <button id="Pruef78" onclick="Aufgabe78()">Prüfen</button></p></pre>  
+Kiefern  <input type="text" id="Eintrag78" maxlength="1"  ></input> ha <button id="Pruef78" onclick="Aufgabe78()">Prüfen</button></p> 
 
                       <script>
                         function Aufgabe78() { 
@@ -103,21 +158,21 @@ Kiefern  <input type="text" id="Eintrag78" maxlength="1" size="1" style= backgro
                           
 <!--//Aufgabe 79-->
                           
-<pre><p class="Aufgabe">Aufgabe 79
+<h2>Aufgabe 79</h2><p>
 
 Für den Einkauf von 2 neuen Geräten G und H 
-stehen einem Kaufhaus 8 000 € zur Verfügung. 
+stehen einem Kaufhaus <br class="br-desk">8 000 € zur Verfügung. 
 G kostet 80 €, H 120 €. Die Anzahl von H soll
 maximal das Dreifache von G sein. Der Gewinn 
 pro verkauftem G beträgt 10 €, bei H 12 €.
 Wie viele G und H sollte das Kaufhaus einkaufen,
-um maximalen Gewinn zu erzielen?  
+um maximalen Gewinn zu erzielen?</p>  
 
-<button  onclick="window.open('Ungleich_Aufgabe79.html');" >Lösung</button></p></pre>                          
+<button  onclick="window.open('Ungleich_Aufgabe79.html');" >Lösung</button></p>                        
 
 <!--//Aufgabe 80-->
 
-<pre><p class ="Aufgabe" >Aufgabe 80
+<h2>Aufgabe 80</h2><p>
 
 Eine Firma stellt zwei Geräte G<sub>1</sub> und G₂ her und 
 kann monatlich 150 G₁ und 120 G<sub>2</sub> montieren. 
@@ -126,9 +181,9 @@ Ein Zulieferer versorgt die Firma mit maximal
 braucht sie zum Einbau 2h für G<sub>1</sub> und 5 h für G<sub>2</sub> 
 bei monatlich maximal 750 Arbeitsstunden. 
 G<sub>1</sub> liefert 280 €, G<sub>2</sub> 350 € Gewinn. 
-Wie hoch ist der maximale Gewinn?     
+Wie hoch ist der maximale Gewinn?</p>     
 
-G<sub>max</sub> = <input type="text" id="Eintrag80" maxlength="5" size="2" style= background-color:yellow ></input> € <button id="Pruef80" onclick="Aufgabe80()">Prüfen</button></p></pre>  
+G<sub>max</sub> = <input type="text" id="Eintrag80" maxlength="5"  ></input> € <button id="Pruef80" onclick="Aufgabe80()">Prüfen</button></p> 
 
                       <script>
                         function Aufgabe80() { 
@@ -146,7 +201,7 @@ G<sub>max</sub> = <input type="text" id="Eintrag80" maxlength="5" size="2" style
 
 <!--//Aufgabe 81-->                           
                                                      
-<pre><p class="Aufgabe">Aufgabe 81
+<h2>Aufgabe 81</h2><p>
 
 In der Grube 1 fördern 50 Arbeiter 9 t Groberz, 
 3 t Mittelerz und 6 t Feinerz pro Tag. 
@@ -156,13 +211,13 @@ Mittelerz und 36 t Feinerz verarbeitet werden.
 Wie viele Tage wird in jeder Grube gefördert, 
 wenn die Betriebskosten pro Tag und Tonne in 
 Grube 1300 €, in Grube 2 240 € betragen und sie 
-minimal sein sollen?  
+minimal sein sollen?</p>  
 
-<button  onclick="window.open('Ungleich_Aufgabe81.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Ungleich_Aufgabe81.html');" >Lösung</button></p>
 
 <!--//Aufgabe 82--> 
 
-<pre><p class ="Aufgabe" >Aufgabe 82
+<h2>Aufgabe 82</h2><p>
 
 Rindfleisch mit 100 g Fettanteil pro kg kostet 
 12,40 €/kg. Schweinefleisch mit 400 g Fettanteil 
@@ -170,9 +225,9 @@ pro kg kostet 11,20 €/kg.
 Welche Mengen Rind- und Schweinefleisch muss man 
 einkaufen, wenn sie mindestens 2 400 g fettfreies 
 und 600 g fettes Fleisch enthalten sollen und der 
-Einkauf am billigsten sein soll.            
+Einkauf am billigsten sein soll.</p>            
 
-<input type="text" id="Eintrag82" maxlength="1" size="1" style= background-color:yellow ></input> kg Rindfleisch, 1 kg Schweinefleisch <button id="Pruef82" onclick="Aufgabe82()">Prüfen</button> </p></pre>  
+<input type="text" id="Eintrag82" maxlength="1"  ></input> kg Rindfleisch, 1 kg Schweinefleisch <button id="Pruef82" onclick="Aufgabe82()">Prüfen</button> </p>
 
                       <script>
                         function Aufgabe82() { 
@@ -190,27 +245,27 @@ Einkauf am billigsten sein soll.
                           
 <!--//Aufgabe 83-->                          
 
-<pre><p class="Aufgabe">Aufgabe 83
+<h2>Aufgabe 83</h2><p>
 
-Fleisch und Hülsenfrüchte enthalten pro kg
+Fleisch und Hülsenfrüchte enthalten pro kg</p><pre>
                      Fleisch     Hülsenfrüchte
 Wärmeenergie in kJ   16 000          8 000   
 Eiweiß in g              80            400
 Fett in g               400             80
 Kohlenhydrate in g      320            320
 Sonstige in g           200            200 
-Preis in €/kg            10              8    
+Preis in €/kg            10              8</pre>    
 Eine Notration soll mindestens 6 700 kJ, 
 100 g Eiweiß, 100 g Fett, 200 g Kohlenhydrate 
 und eine unbestimmte Menge Sonstige enthalten. 
 Mit welchen Mengen Fleisch und Hülsenfrüchten 
-wird sie am billigsten?  
+wird sie am billigsten?</p>  
 
-<button  onclick="window.open('Ungleich_Aufgabe83.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Ungleich_Aufgabe83.html');" >Lösung</button></p>
 
 <!--//Aufgabe 84-->
 
-<pre><p class ="Aufgabe" >Aufgabe 84
+<h2>Aufgabe 84</h2><p>
 
 Eine Fabrik stellt zwei unterschiedliche 
 Bauteile in 2 getrennten Werken her. Für Bauteil 
@@ -221,9 +276,9 @@ Werk 1 hat eine maximale Kapazität von 240
 Arbeitstakten Werk 2 eine von 180. Jedes Bauteil 
 A liefert einen Gewinn von 240 €, B einen von 
 160 €. Bei welchen Stückzahlen ist der Gewinn G 
-am größten? 
+am größten?</p> 
 
-Bei 21 A und <input type="text" id="Eintrag84" maxlength="2" size="1" style= background-color:yellow ></input> B <button id="Pruef84" onclick="Aufgabe84()">Prüfen</button></p></pre>  
+Bei 21 A und <input type="text" id="Eintrag84" maxlength="2"  ></input> B <button id="Pruef84" onclick="Aufgabe84()">Prüfen</button></p> 
 
                       <script>
                         function Aufgabe84() { 
@@ -241,24 +296,24 @@ Bei 21 A und <input type="text" id="Eintrag84" maxlength="2" size="1" style= bac
 
 <!--//Aufgabe 85-->                          
                           
-<pre><p class="Aufgabe">Aufgabe 85
+<h2>Aufgabe 85</h2><p>
 
 Für eine elektrische Montage haben die Monteure
-in ihren Behältern 21 600 cm<sup>3</sup> Platz für Batterien. 
-Ihnen werden Batterien vom Typ A mit 200 cm<sup>3</sup> 
+in ihren Behältern <br class="br-desk">21 600 cm<sup>3</sup> Platz für Batterien. 
+Ihnen werden Batterien vom Typ A mit <br class="br-desk">200 cm<sup>3</sup> 
 Raumbedarf und vom Typ B mit 300 cm<sup>3</sup> 
 angeboten. Typ A kostet 10 € Typ B 5 €. Typ A
 liefert 18 Stunden lang Strom Typ B 16 Stunden.
 Wieviel Batterien von Typ A und B sollten die 
 Monteure kaufen, wenn die Nutzungsdauer 
 maximal sein soll und ihnen 500 € für den  
-Einkauf zur Verfügung stehen?  
+Einkauf zur Verfügung stehen? </p> 
 
-<button  onclick="window.open('Ungleich_Aufgabe85.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Ungleich_Aufgabe85.html');" >Lösung</button></p>
 
 <!--//Aufgabe 86-->
 
-<pre><p class ="Aufgabe" >Aufgabe 86
+<h2>Aufgabe 86</h2><p>
 
 Eine Firma kann 400 Dickdrahtrollen und 300 Dünn-
 drahtrollen pro Tag herstellen. Sie liefert 
@@ -266,9 +321,9 @@ täglich 500 Rollen aus. Pro Dickdrahtrolle
 verdient sie 10 €, pro Dünndrahtrolle 15 €. 
 Wieviel Rollen Dick- bzw. Dünndraht muss sie pro 
 Tag verkaufen, um einen möglichst großen Gewinn 
-G zu erzielen?            
+G zu erzielen?</p>            
 
-<input type="text" id="Eintrag86" maxlength="3" size="1" style= background-color:yellow ></input> Rollen Dünndraht <button id="Pruef86" onclick="Aufgabe86()">Prüfen</button></p></pre>  
+<input type="text" id="Eintrag86" maxlength="3"  ></input> Rollen Dünndraht <button id="Pruef86" onclick="Aufgabe86()">Prüfen</button></p>
 
                       <script>
                         function Aufgabe86() { 
@@ -286,7 +341,7 @@ G zu erzielen?
                           
 <!--//Aufgabe 87-->                          
                           
-<pre><p class="Aufgabe">Aufgabe 87
+<h2>Aufgabe 87</h2><p>
 
 Ein Landwirt will für eine Düngung die Dünger-
 sorten A und B mischen. Von A bekommt er von 
@@ -297,20 +352,20 @@ Beim Kauf gibt es für die Sorte A einen
 Preisnachlass von 0,30 € pro kg, für B einen 
 von 0,40 €. 
 Bei welcher Einkaufsmenge von A und B erzielt 
-er den höchsten Preisnachlass N? 
+er den höchsten Preisnachlass N?</p> 
 
-<button  onclick="window.open('Ungleich_Aufgabe87.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Ungleich_Aufgabe87.html');" >Lösung</button></p>
 
 <!--//Aufgabe 88-->
 
-<pre><p class ="Aufgabe" >Aufgabe 88
+<h2>Aufgabe 88</h2><p>
 
 Für welche natürlichen Zahlen x und y ist der 
 Ausdruck A = 7x + 5y + 3 am größten, wenn 
 x + y maximal = 10 und y mindestens um 2 
-größer ist als x?   
+größer ist als x?</p>   
 
-y = <input type="text" id="Eintrag88" maxlength="1" size="1" style= background-color:yellow ></input> <button id="Pruef88" onclick="Aufgabe88()">Prüfen</button>  </p></pre>  
+y = <input type="text" id="Eintrag88" maxlength="1"  ></input> <button id="Pruef88" onclick="Aufgabe88()">Prüfen</button>  </p>
 
                       <script>
                         function Aufgabe88() { 
@@ -328,7 +383,7 @@ y = <input type="text" id="Eintrag88" maxlength="1" size="1" style= background-c
                           
 <!--//Aufgabe 89-->                          
                           
-<pre><p class="Aufgabe">Aufgabe 89
+<h2>Aufgabe 89</h2><p>
 
 Eine Fabrik verkauft das Bauteil A für 10 000 €, 
 das Bauteil B für 10 000 €. Pro Tag können 
@@ -336,13 +391,13 @@ entweder 15 Bauteile A oder 30 Bauteile B
 hergestellt werden.Wieviele Bauteile A oder B 
 wird sie in 240 Tagen herstellen, wenn möglichst 
 hohe Gesamteinnahmen erzielt werden sollen, und 
-sie maximal 6 000 Bauteile absetzen kann?  
+sie maximal 6 000 Bauteile absetzen kann?</p>  
 
-<button  onclick="window.open('Ungleich_Aufgabe89.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Ungleich_Aufgabe89.html');" >Lösung</button></p>
 
 <!--//Aufgabe 90-->
 
-<pre><p class ="Aufgabe" >Aufgabe 90
+<h2>Aufgabe 90</h2><p>
 
 Ein Unternehmer stellt Zusatzbauteile für 
 Computer her. Für Bauteil A braucht er in der 
@@ -350,18 +405,18 @@ Herstellung 10 Minuten, für Bauteil B 20 Minuten
 bei einer maximalen Arbeitszeit von 6 h. 
 Für die Materialkosten, Bauteil A 3 €, Bauteil B 
 2 €, stehen ihm 50 €/Tag zur Verfügung. Bietet er 
-Bauteil A für 9 €, Bauteil B für 7 € an, kann er 
-insgesamt 20 Bauteile/Tag verkaufen.
+Bauteil A für <br class="br-desk">9 €, Bauteil B für 7 € an, kann er 
+insgesamt 20 Bauteile/Tag verkaufen.</p>
 a) Wieviele Bauteile A und B muss er täglich 
 herstellen, wenn er möglichst hohe Einnahmen 
-haben will?
+haben will?</p>
 b) Wie hoch ist sein maximaler Gewinn G?
-c) Wie viele Bauteile A und B muss er täglich 
+c) Wie viele Bauteile A und B muss er täglich </p>
 herstellen, wenn er bei möglichst kurzer 
-Arbeitszeit mindestens 150 € einnehmen will? 
-d) Wie lange ist seine Arbeitszeit?              
+Arbeitszeit mindestens 150 € einnehmen will?</p> 
+d) Wie lange ist seine Arbeitszeit?</p>              
 
-d) <input type="text" id="Eintrag90" maxlength="3" size="1" style= background-color:yellow ></input> Minuten <button id="Pruef90" onclick="Aufgabe90()">Prüfen</button>   </p></pre>  
+d) <input type="text" id="Eintrag90" maxlength="3"  ></input> Minuten <button id="Pruef90" onclick="Aufgabe90()">Prüfen</button>   </p>
 
                       <script>
                         function Aufgabe90() { 
@@ -378,28 +433,28 @@ d) <input type="text" id="Eintrag90" maxlength="3" size="1" style= background-co
                           
 <!--//Aufgabe 91-->                          
                           
-<pre><p class="Aufgabe">Aufgabe 91
+<h2>Aufgabe 91</h2><p>
 
 Für die Geräte A und B werden auf 3 Automaten 
 C, D und E Bauteile gefertigt. In der Matrix ist 
 der Zeitaufwand für die Geräte pro Automat 
-dargestellt.
+dargestellt.</p><pre>
 Automat     Zeitaufwand in Minuten 
                 A            B  
      C         4,5           3
      D         4             4 
-     E         1,5           6
+     E         1,5           6</pre>
 Die Automaten haben eine maximale Nutzzeit von 
 6 Stunden. Wieviel Geräte sollten hergestellt 
 werden, wenn der Gewinn pro Gerät A 3 € und der 
 von B 4 € beträgt und der Gesamtgewinn G maximal 
-sein soll?  
+sein soll?</p>  
 
-<button  onclick="window.open('Ungleich_Aufgabe91.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Ungleich_Aufgabe91.html');" >Lösung</button></p>
 
 <!--//Aufgabe 92-->
 
-<pre><p class ="Aufgabe" >Aufgabe 92
+<h2>Aufgabe 92</h2><p>
 
 Ein Mensch braucht wöchentlich mindestens 70 mg 
 Vitamin H und 150 mg Vitamin B. Es gibt Tabletten 
@@ -408,9 +463,9 @@ die Sorte B mit 20 mg H und 10 mg B pro Gramm.
 Die Sorte A kostet 0,50 € pro g und die Sorte B 
 0,40 € pro g. Wieviel g von jeder Sorte muss er 
 in einer Woche einnehmen, um zu möglichst geringen 
-Kosten K seinen Bedarf zu decken?  
+Kosten K seinen Bedarf zu decken?</p>  
 
-Es sind <input type="text" id="Eintrag92" maxlength="3" size="1" style= background-color:yellow ></input> g der Sorte A. <button id="Pruef92" onclick="Aufgabe92()">Prüfen</button> </p></pre>  
+Es sind <input type="text" id="Eintrag92" maxlength="3"  ></input> g der Sorte A. <button id="Pruef92" onclick="Aufgabe92()">Prüfen</button> </p>
 
                       <script>
                         function Aufgabe92() { 
@@ -427,44 +482,44 @@ Es sind <input type="text" id="Eintrag92" maxlength="3" size="1" style= backgrou
                           
 <!--//Aufgabe 93-->                          
                           
-<pre><p class="Aufgabe">Aufgabe 93
+<h2>Aufgabe 93</h2><p>
 
 Zur Herstellung einer Legierung braucht man die 
 Metalle S, T und U in einer vorgegebenen 
 Mindestmenge M. Sie befinden sich als 
 Bestandteile in den Erzen E und F. 
-Die Verteilung zeigt die Matrix:
+Die Verteilung zeigt die Matrix:</p><pre>
             E        F         M
 S in t     0,1       0        0,3
 T in t     0,1       0,1      1
-U in t     0,1       0,2      1,4
+U in t     0,1       0,2      1,4</pre>
 Erz E kostet 20 € pro Tonne, Erz F 15 €. 
 Wieviel t E und F braucht man, wenn die 
-Kosten K minimal sein sollen?     
+Kosten K minimal sein sollen?</p>     
 
-<button  onclick="window.open('Ungleich_Aufgabe93.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Ungleich_Aufgabe93.html');" >Lösung</button></p>
 
 <!--//Aufgabe 94-->
 
-<pre><p class ="Aufgabe" >Aufgabe 94
+<h2>Aufgabe 94</h2><p>
 
 2 Bauteile A und B werden an 3 Werkzeug-
 maschinen bei der Herstellung bearbeitet. 
 In der Matrix sind die Bearbeitungszeiten 
-pro Bauteil in Minuten dargestellt.
+pro Bauteil in Minuten dargestellt.</p><pre>
                 A       B
 Maschine 1      3       6
 Maschine 2      6       4
-Maschine 3      6       0
+Maschine 3      6       0</pre>
 Maschine 1 und 2 stehen täglich höchstens 
 6 Stunden, Maschine 3 5 Stunden zur Verfügung. 
 Bauteil A kann mit einem Gewinn von 10 €, 
 Bauteil B zu einem von 12 € verkauft werden. 
 Wieviele Bauteile A und B muss man täglich 
 herstellen, um einen maximalen Gewinn G zu 
-erzielen?             
+erzielen?</p>             
 
-<input type="text" id="Eintrag94" maxlength="2" size="1" style= background-color:yellow ></input> Bauteile B <button id="Pruef94" onclick="Aufgabe94()">Prüfen</button> </p></pre>  
+<input type="text" id="Eintrag94" maxlength="2"  ></input> Bauteile B <button id="Pruef94" onclick="Aufgabe94()">Prüfen</button> </p>
 
                       <script>
                         function Aufgabe94() { 
@@ -481,7 +536,7 @@ erzielen?
 
 <!--//Aufgabe 95-->
 
-<pre><p class="Aufgabe">Aufgabe 95
+<h2>Aufgabe 95</h2><p>
 
 2 Bauteile A und B werden an 2 Maschinen 
 bearbeitet und auf 2 Bahnen zusammengesetzt. Pro 
@@ -495,11 +550,11 @@ höchstens 20 Bauteile pro Tag zusammengesetzt
 werden. Wieviel Bauteile A und B sind pro Tag 
 herzustellen, wenn das Bauteil A einen Gewinn 
 von 40 €, Bauteil B einen von 25 € erzielt und 
-der Gewinn G maximal sein soll? 
+der Gewinn G maximal sein soll?</p> 
 
-<button  onclick="window.open('Ungleich_Aufgabe95.html');" >Lösung</button></p></b></pre>
+<button  onclick="window.open('Ungleich_Aufgabe95.html');" >Lösung</button></p>
 
-	      <a href= "index.html" ><p class="Text2" > <span style= >zurück</span></p></a>                
+	      <a href= "index.html" ><p class="Text2" > <span style= >zurück</span></p></a></div></main>                
                     
         <script>
             document.body.addEventListener("input", function(inputEvent) {
